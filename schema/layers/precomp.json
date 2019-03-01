@@ -1,0 +1,146 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ty": {
+      "title": "Type",
+      "description": "图层类型：Precomp。",
+      "type": "number",
+      "const": 0
+    },
+    "ks": {
+      "title": "Transform",
+      "description": "转换属性",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/transform.json"
+        }
+      ],
+      "type": "object"
+    },
+    "ao": {
+      "title": "Auto-Orient",
+      "description": "沿路径AE属性自动定向。",
+      "type": "number",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/boolean.json"
+        }
+      ]
+    },
+    "bm": {
+      "title": "Blend Mode",
+      "description": "混合模式",
+      "type": "number",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/blendMode.json"
+        }
+      ],
+      "default": 0
+    },
+    "ddd": {
+      "title": "3d Layer",
+      "description": "3d图层标志",
+      "type": "number",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/boolean.json"
+        }
+      ],
+      "default": 0
+    },
+    "ind": {
+      "title": "Index",
+      "description": "AE中的层索引。用于父母和表达式。",
+      "type": "number"
+    },
+    "cl": {
+      "title": "Class",
+      "description": "在SVG / HTML渲染器上用作html类的解析图层名称",
+      "type": "string"
+    },
+    "ln": {
+      "title": "layer HTML ID",
+      "description": "在SVG / HTML渲染器上用作html id的解析图层名称",
+      "type": "string"
+    },
+    "ip": {
+      "title": "In Point",
+      "description": "在点的层。设置图层的初始框架。",
+      "type": "number"
+    },
+    "op": {
+      "title": "Out Point",
+      "description": "Out Point of layer。设置图层的最终帧。",
+      "type": "number"
+    },
+    "st": {
+      "title": "Start Time",
+      "description": "图层的开始时间。设置图层的开始时间。",
+      "type": "number"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects图层名称。用于表达式。",
+      "type": "number"
+    },
+    "hasMask": {
+      "title": "Has Masks",
+      "description": "图层具有蒙版时的布尔值。将弃用以支持检查maskProperties。",
+      "type": "number"
+    },
+    "maskProperties": {
+      "title": "Mask Properties",
+      "description": "面具清单",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/helpers/mask.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "ef": {
+      "title": "Effects",
+      "description": "效果列表",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/effects/index.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "sr": {
+      "title": "Stretch",
+      "description": "图层时间拉伸",
+      "type": "number",
+      "default": 1
+    },
+    "parent": {
+      "title": "Parent",
+      "description": "图层父级。使用父母的ind。",
+      "type": "number"
+    },
+    "refId": {
+      "title": "Reference ID",
+      "description": "id指向'ass​​ets'对象上定义的源组合",
+      "type": "string"
+    },
+    "tm": {
+      "title": "Time Remapping",
+      "description": "Comp的时间重新映射",
+      "type": "number",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ]
+    }
+  }
+}

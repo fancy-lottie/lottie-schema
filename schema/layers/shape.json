@@ -1,0 +1,230 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ty": {
+      "title": "Type",
+      "description": "图层类型：形状。",
+      "type": "number",
+      "const": 4
+    },
+    "ks": {
+      "title": "Transform",
+      "description": "转换属性",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/transform.json"
+        }
+      ],
+      "type": "object"
+    },
+    "ao": {
+      "title": "Auto-Orient",
+      "description": "沿路径AE属性自动定向。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/boolean.json"
+        }
+      ],
+      "type": "number",
+      "default": 0
+    },
+    "bm": {
+      "title": "Blend Mode",
+      "description": "混合模式",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/blendMode.json"
+        }
+      ],
+      "type": "number",
+      "default": 0
+    },
+    "ddd": {
+      "title": "3d Layer",
+      "description": "3d图层标志",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/boolean.json"
+        }
+      ],
+      "type": "number",
+      "default": 0
+    },
+    "ind": {
+      "title": "Index",
+      "description": "AE中的层索引。用于父母和表达式。",
+      "type": "number"
+    },
+    "cl": {
+      "title": "Class",
+      "description": "在SVG / HTML渲染器上用作html类的解析图层名称",
+      "type": "string"
+    },
+    "ln": {
+      "title": "layer HTML ID",
+      "description": "在SVG / HTML渲染器上用作html id的解析图层名称",
+      "type": "string"
+    },
+    "ip": {
+      "title": "In Point",
+      "description": "在点的层。设置图层的初始框架。",
+      "type": "number"
+    },
+    "op": {
+      "title": "Out Point",
+      "description": "Out Point of layer。设置图层的最终帧。",
+      "type": "number"
+    },
+    "st": {
+      "title": "Start Time",
+      "description": "图层的开始时间。设置图层的开始时间。",
+      "type": "number"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects图层名称。用于表达式。",
+      "type": "number"
+    },
+    "hasMask": {
+      "title": "Has Masks",
+      "description": "图层具有蒙版时的布尔值。将弃用以支持检查maskProperties。",
+      "type": "number"
+    },
+    "maskProperties": {
+      "title": "Mask Properties",
+      "description": "面具清单",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/helpers/mask.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "ef": {
+      "title": "Effects",
+      "description": "效果列表",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/effects/index.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "sr": {
+      "title": "Stretch",
+      "description": "图层时间拉伸",
+      "type": "number",
+      "default": 1
+    },
+    "parent": {
+      "title": "Parent",
+      "description": "图层父级。使用父母的ind。",
+      "type": "number"
+    },
+    "shapes": {
+      "title": "shapes",
+      "description": "shapes",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/shapes/shape.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/rect.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/ellipse.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/star.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/fill.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/gFill.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/gStroke.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/stroke.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/merge.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/trim.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/group.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/roundedCorners.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/repeater.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "it": {
+      "title": "Items",
+      "description": "形状项目列表",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/shapes/shape.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/rect.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/ellipse.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/star.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/fill.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/gFill.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/gStroke.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/stroke.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/merge.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/trim.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/group.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/roundedCorners.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/repeater.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  }
+}

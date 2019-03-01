@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "形状内容类型。",
+      "type": "string",
+      "const": "tm"
+    },
+    "s": {
+      "title": "Start",
+      "description": "修剪开始。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "e": {
+      "title": "End",
+      "description": "修剪结束。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "o": {
+      "title": "Offset",
+      "description": "修剪偏移。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

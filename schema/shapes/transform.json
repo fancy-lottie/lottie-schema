@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "a": {
+      "title": "Anchor Point",
+      "description": "形状变换锚点",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "p": {
+      "title": "Position",
+      "description": "形状转换位置",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "s": {
+      "title": "Scale",
+      "description": "形状变换比例",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "r": {
+      "title": "Rotation",
+      "description": "形状变换旋转",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "o": {
+      "title": "Opacity",
+      "description": "形状不透明度",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "sk": {
+      "title": "Skew",
+      "description": "形状变换偏斜",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "sa": {
+      "title": "Skew Axis",
+      "description": "形状变换斜轴",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

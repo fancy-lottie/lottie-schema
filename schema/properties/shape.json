@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "k": {
+      "description": "属性的值",
+      "extended_name": "Value",
+      "type": "object",
+      "$ref": "http://localhost:8888/schema/properties/shapeProp.json"
+    },
+    "x": {
+      "description": "财产表达。修改值的AE表达式。",
+      "extended_name": "Expression",
+      "type": "string"
+    },
+    "ix": {
+      "description": "ix值,用于表达式。",
+      "extended_name": "Property Index",
+      "type": "string"
+    },
+    "a": {
+      "description": "定义属性是否为动画",
+      "extended_name": "Animated",
+      "type": "number"
+    }
+  }
+}

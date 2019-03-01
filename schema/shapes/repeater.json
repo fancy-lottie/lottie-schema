@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "形状内容类型。",
+      "type": "string",
+      "const": "rp"
+    },
+    "c": {
+      "title": "Copies",
+      "description": "复印数量",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object",
+      "default": {"a": 0, "k": 1}
+    },
+    "o": {
+      "title": "Offset",
+      "description": "副本的偏移量",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object",
+      "default": {"a": 0, "k": 0}
+    },
+    "m": {
+      "title": "Composite",
+      "description": "复合的副本",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/composite.json"
+        }
+      ],
+      "type": "number",
+      "default": 1
+    },
+    "tr": {
+      "title": "Transform",
+      "description": "转换每个转发器副本的值",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/transform.json"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

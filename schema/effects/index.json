@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "http://localhost:8888/schema/effects/slider.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/angle.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/color.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/point.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/checkbox.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/group.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/noValue.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/dropDown.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/customValue.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/layerIndex.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/tint.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/fill.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/stroke.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/tritone.json"
+    },
+    {
+      "$ref": "http://localhost:8888/schema/effects/proLevels.json"
+    }
+  ]
+}

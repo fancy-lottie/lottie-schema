@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "d": {
+      "title": "Direction",
+      "description": "After Effects方向。方向如何绘制形状。例如，用于修剪路径。",
+      "type": "number"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "形状内容类型。",
+      "type": "string",
+      "const": "sh"
+    },
+    "ks": {
+      "title": "Vertices",
+      "description": "形状的顶点",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/shape.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/shapeKeyframed.json"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

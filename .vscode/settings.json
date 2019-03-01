@@ -1,0 +1,12 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/data/*.json",
+        "/data/**/*.json"
+      ],
+      "url": "http://127.0.0.1:8888/schema/animation.json"
+    }
+  ]
+}
+

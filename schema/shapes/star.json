@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "d": {
+      "title": "Direction",
+      "description": "After Effects方向。方向如何绘制形状。例如，用于修剪路径。",
+      "type": "number"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "形状内容类型。",
+      "type": "string",
+      "const": "sr"
+    },
+    "p": {
+      "title": "Position",
+      "description": "明星的位置",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "ir": {
+      "title": "Outer Radius",
+      "description": "星的外半径。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "is": {
+      "title": "Outer Roundness",
+      "description": "明星的外圆度。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "r": {
+      "title": "Rotation",
+      "description": "明星的轮换。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "pt": {
+      "title": "Points",
+      "description": "明星的积分数。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "sy": {
+      "title": "Star Type",
+      "description": "明星的类型。多边形或星形。",
+      "type": "object",
+      "oneOf": [
+        {
+          "standsFor": "Star",
+          "value": 1
+        },
+        {
+          "standsFor": "Polygon",
+          "value": 2
+        }
+      ]
+    }
+  }
+}

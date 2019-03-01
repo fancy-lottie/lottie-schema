@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "形状内容类型。",
+      "type": "string",
+      "const": "gf"
+    },
+    "o": {
+      "title": "Opacity",
+      "description": "填充不透明度",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "s": {
+      "title": "Start Point",
+      "description": "渐变起点",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "e": {
+      "title": "End Point",
+      "description": "渐变终点",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "t": {
+      "title": "Type",
+      "description": "梯度类型",
+      "oneOf": [
+        {
+          "standsFor": "Linear",
+          "value": 1
+        },
+        {
+          "standsFor": "Radial",
+          "value": 2
+        }
+      ],
+      "type": "object"
+    },
+    "h": {
+      "title": "Highlight Length",
+      "description": "渐变高光长度。仅当类型为径向时",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "a": {
+      "title": "Highlight Angle",
+      "description": "突出显示角度。仅当类型为径向时",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "g": {
+      "title": "Gradient Colors",
+      "description": "渐变色",
+      "type": "object"
+    }
+  }
+}
