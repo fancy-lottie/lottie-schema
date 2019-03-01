@@ -21,7 +21,7 @@
     "r": {
       "title": "Radius",
       "description": "圆角半径",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },

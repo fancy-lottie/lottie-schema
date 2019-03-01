@@ -21,7 +21,7 @@
     "o": {
       "title": "Opacity",
       "description": "中风不透明度",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -34,7 +34,7 @@
     "s": {
       "title": "Start Point",
       "description": "渐变起点",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -47,7 +47,7 @@
     "e": {
       "title": "End Point",
       "description": "渐变终点",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -60,7 +60,7 @@
     "t": {
       "title": "Type",
       "description": "梯度类型",
-      "anyOf": [
+      "oneOf": [
         {
           "standsFor": "Linear",
           "value": 1
@@ -75,7 +75,7 @@
     "h": {
       "title": "Highlight Length",
       "description": "渐变高光长度。仅当类型为径向时",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -88,7 +88,7 @@
     "a": {
       "title": "Highlight Angle",
       "description": "突出显示角度。仅当类型为径向时",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -106,7 +106,7 @@
     "w": {
       "title": "Stroke Width",
       "description": "渐变笔画宽度",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -119,7 +119,7 @@
     "lc": {
       "title": "Line Cap",
       "description": "渐变笔划线帽",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/lineCap.json"
         }
@@ -129,7 +129,7 @@
     "lj": {
       "title": "Line Join",
       "description": "渐变笔划线加入",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/lineJoin.json"
         }

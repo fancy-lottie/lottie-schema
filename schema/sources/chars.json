@@ -43,7 +43,7 @@
                   {
                     "title": "keys",
                     "description": "字符项键",
-                    "anyOf": [
+                    "oneOf": [
                       {
                         "$ref": "http://localhost:8888/schema/properties/shape.json"
                       }

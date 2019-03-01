@@ -11,7 +11,7 @@
     "ks": {
       "title": "Transform",
       "description": "转换属性",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/transform.json"
         }
@@ -21,7 +21,7 @@
     "ao": {
       "title": "Auto-Orient",
       "description": "沿路径AE属性自动定向。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/boolean.json"
         }
@@ -32,7 +32,7 @@
     "bm": {
       "title": "Blend Mode",
       "description": "混合模式",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/blendMode.json"
         }
@@ -43,7 +43,7 @@
     "ddd": {
       "title": "3d Layer",
       "description": "3d图层标志",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/boolean.json"
         }
@@ -95,7 +95,7 @@
       "title": "Mask Properties",
       "description": "面具清单",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/helpers/mask.json"
           }
@@ -108,7 +108,7 @@
       "title": "Effects",
       "description": "效果列表",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/effects/index.json"
           }
@@ -132,7 +132,7 @@
       "title": "shapes",
       "description": "shapes",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/shapes/shape.json"
           },
@@ -181,7 +181,7 @@
       "title": "Items",
       "description": "形状项目列表",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/shapes/shape.json"
           },

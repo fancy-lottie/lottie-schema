@@ -91,7 +91,7 @@
       "title": "Chars",
       "description": "源字符文本图层",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/sources/chars.json"
           }

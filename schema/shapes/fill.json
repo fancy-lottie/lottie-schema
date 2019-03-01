@@ -21,7 +21,7 @@
     "o": {
       "title": "Opacity",
       "description": "填充不透明度",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -34,7 +34,7 @@
     "c": {
       "title": "Color",
       "description": "填色",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },

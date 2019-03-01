@@ -21,7 +21,7 @@
     "lc": {
       "title": "Line Cap",
       "description": "Stroke Line Cap",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/lineCap.json"
         }
@@ -31,7 +31,7 @@
     "lj": {
       "title": "Line Join",
       "description": "Stroke Line Join",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/lineJoin.json"
         }
@@ -46,7 +46,7 @@
     "o": {
       "title": "Opacity",
       "description": "Stroke Opacity",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -59,7 +59,7 @@
     "w": {
       "title": "Width",
       "description": "Stroke Width",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -72,7 +72,7 @@
     "c": {
       "title": "Color",
       "description": "Stroke Color",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },

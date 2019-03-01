@@ -19,7 +19,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/properties/shape.json"
           },
@@ -33,7 +33,7 @@
       "title": "Opacity",
       "description": "遮罩不透明度。",
       "type": "object",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/const.json"
         },
@@ -47,7 +47,7 @@
       "title": "Mode",
       "description": "掩模模式。并非所有掩码类型都受支持。",
       "type": "string",
-      "anyOf": [
+      "oneOf": [
         {
           "standsFor": "None",
           "const": "n"

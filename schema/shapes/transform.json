@@ -10,7 +10,7 @@
     "a": {
       "title": "Anchor Point",
       "description": "形状变换锚点",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -23,7 +23,7 @@
     "p": {
       "title": "Position",
       "description": "形状转换位置",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -36,7 +36,7 @@
     "s": {
       "title": "Scale",
       "description": "形状变换比例",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -49,7 +49,7 @@
     "r": {
       "title": "Rotation",
       "description": "形状变换旋转",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -62,7 +62,7 @@
     "o": {
       "title": "Opacity",
       "description": "形状不透明度",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -75,7 +75,7 @@
     "sk": {
       "title": "Skew",
       "description": "形状变换偏斜",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -88,7 +88,7 @@
     "sa": {
       "title": "Skew Axis",
       "description": "形状变换斜轴",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },

@@ -11,7 +11,7 @@
     "ks": {
       "title": "Transform",
       "description": "转换属性",
-      "anyOf": [{
+      "oneOf": [{
         "$ref": "http://localhost:8888/schema/helpers/transform.json"
       }],
       "type": "object"
@@ -19,7 +19,7 @@
     "ao": {
       "title": "Auto-Orient",
       "description": "沿路径AE属性自动定向。",
-      "anyOf": [{
+      "oneOf": [{
         "$ref": "http://localhost:8888/schema/helpers/boolean.json"
       }],
       "type": "number",
@@ -28,7 +28,7 @@
     "bm": {
       "title": "Blend Mode",
       "description": "混合模式",
-      "anyOf": [{
+      "oneOf": [{
         "$ref": "http://localhost:8888/schema/helpers/blendMode.json"
       }],
       "type": "number",
@@ -37,7 +37,7 @@
     "ddd": {
       "title": "3d Layer",
       "description": "3d图层标志",
-      "anyOf": [{
+      "oneOf": [{
         "$ref": "http://localhost:8888/schema/helpers/boolean.json"
       }],
       "type": "number",
@@ -87,7 +87,7 @@
       "title": "Mask Properties",
       "description": "面具清单",
       "items": {
-        "anyOf": [{
+        "oneOf": [{
           "$ref": "http://localhost:8888/schema/helpers/mask.json"
         }],
         "type": "object"
@@ -97,7 +97,7 @@
     "ef": {
       "title": "Effects",
       "description": "沿路径AE属性自动定向。",
-      "anyOf": [{
+      "oneOf": [{
         "$ref": "http://localhost:8888/schema/helpers/boolean.json"
       }],
       "type": "number"
@@ -129,7 +129,7 @@
                   "p": {
                     "title": "Position",
                     "description": "文本动画师位置",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
                       },
                       {
@@ -141,7 +141,7 @@
                   "a": {
                     "title": "Anchor Point",
                     "description": "文本动画师锚点",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
                       },
                       {
@@ -153,7 +153,7 @@
                   "s": {
                     "title": "Scale",
                     "description": "文本动画师比例",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
                       },
                       {
@@ -165,7 +165,7 @@
                   "sk": {
                     "title": "Skew",
                     "description": "文本动画师歪斜",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -177,7 +177,7 @@
                   "sa": {
                     "title": "Skew Axis",
                     "description": "文本动画师Skew Axis",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -189,7 +189,7 @@
                   "r": {
                     "title": "Rotation",
                     "description": "文本动画师旋转",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -201,7 +201,7 @@
                   "o": {
                     "title": "Opacity",
                     "description": "文本动画师不透明度",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -213,7 +213,7 @@
                   "sw": {
                     "title": "Stroke Width",
                     "description": "文本动画师笔画宽度",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -225,7 +225,7 @@
                   "sc": {
                     "title": "Stroke Color",
                     "description": "文本动画师笔画颜色",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
                       },
                       {
@@ -237,7 +237,7 @@
                   "fc": {
                     "title": "Fill Color",
                     "description": "文本动画师填充颜色",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
                       },
                       {
@@ -249,7 +249,7 @@
                   "fh": {
                     "title": "Fill Hue",
                     "description": "文本动画师填充色调",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -261,7 +261,7 @@
                   "fs": {
                     "title": "Fill Saturation",
                     "description": "文本动画师填充饱和度",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -273,7 +273,7 @@
                   "fb": {
                     "title": "Fill Brightness",
                     "description": "文本动画师填充亮度",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -285,7 +285,7 @@
                   "t": {
                     "title": "Tracking",
                     "description": "文本动画师跟踪",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -309,7 +309,7 @@
                   "maxa": {
                     "title": "Max Amount",
                     "description": "选择器最大金额",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -321,7 +321,7 @@
                   "mine": {
                     "title": "Min Ease",
                     "description": "级别敏捷",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -333,7 +333,7 @@
                   "maxe": {
                     "title": "Max Ease",
                     "description": "级别最大限度",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -345,7 +345,7 @@
                   "r": {
                     "title": "Randomize",
                     "description": "选择器随机化顺序",
-                    "anyOf": [{
+                    "oneOf": [{
                       "$ref": "http://localhost:8888/schema/helpers/boolean.json"
                     }],
                     "type": "number"
@@ -353,7 +353,7 @@
                   "s": {
                     "title": "Shape",
                     "description": "选择器形状",
-                    "anyOf": [{
+                    "oneOf": [{
                       "$ref": "http://localhost:8888/schema/helpers/textShape.json"
                     }],
                     "type": "number"
@@ -361,7 +361,7 @@
                   "bo": {
                     "title": "Based On",
                     "description": "基于的选择器",
-                    "anyOf": [{
+                    "oneOf": [{
                       "$ref": "http://localhost:8888/schema/helpers/textBased.json"
                     }],
                     "type": "number"
@@ -374,7 +374,7 @@
                   "start": {
                     "title": "Start",
                     "description": "选择器启动",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -386,7 +386,7 @@
                   "end": {
                     "title": "End",
                     "description": "选择器结束",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -398,7 +398,7 @@
                   "Offset": {
                     "title": "Offset",
                     "description": "选择器偏移",
-                    "anyOf": [{
+                    "oneOf": [{
                         "$ref": "http://localhost:8888/schema/properties/value.json"
                       },
                       {
@@ -421,7 +421,7 @@
           "properties": [{
               "title": "Anchor Point Grouping",
               "description": "文本锚点分组",
-              "anyOf": [{
+              "oneOf": [{
                 "$ref": "http://localhost:8888/schema/helpers/textGrouping.json"
               }],
               "type": "number"
@@ -429,7 +429,7 @@
             {
               "title": "Grouping Alignment",
               "description": "文本分组对齐",
-              "anyOf": [{
+              "oneOf": [{
                   "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
                 },
                 {
@@ -453,7 +453,7 @@
             "title": "Keyframes",
             "description": "文本文档数据关键帧",
             "items": {
-              "anyOf": [{
+              "oneOf": [{
                 "properties": [{
                     "title": "Time",
                     "description": "关键帧时间",

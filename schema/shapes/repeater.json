@@ -21,7 +21,7 @@
     "c": {
       "title": "Copies",
       "description": "复印数量",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -35,7 +35,7 @@
     "o": {
       "title": "Offset",
       "description": "副本的偏移量",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -49,7 +49,7 @@
     "m": {
       "title": "Composite",
       "description": "复合的副本",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/composite.json"
         }
@@ -60,7 +60,7 @@
     "tr": {
       "title": "Transform",
       "description": "转换每个转发器副本的值",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/transform.json"
         }

@@ -27,7 +27,7 @@
       "title": "Items",
       "description": "组项目清单 group",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/shapes/shape.json",
             "value": "sh"

@@ -28,7 +28,7 @@
       "description": "效果值。",
       "type": "object",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
           },

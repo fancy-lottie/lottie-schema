@@ -27,7 +27,7 @@
       "title": "Effects",
       "description": "效果列表属性。",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/effects/index.json"
           }

@@ -11,7 +11,7 @@
     "ks": {
       "title": "Transform",
       "description": "变换属性",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/transform.json"
         }
@@ -22,7 +22,7 @@
       "title": "Auto-Orient",
       "description": "Auto-Orient along path AE property.",
       "type": "number",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/boolean.json"
         }
@@ -33,7 +33,7 @@
       "title": "Blend Mode",
       "description": "混合模式",
       "type": "number",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/blendMode.json"
         }
@@ -44,7 +44,7 @@
       "title": "3d Layer",
       "description": "3d图片标识",
       "type": "number",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/boolean.json"
         }
@@ -95,7 +95,7 @@
       "title": "Mask Properties",
       "description": "面具清单",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/helpers/mask.json"
           }
@@ -108,7 +108,7 @@
       "title": "Effects",
       "description": "效果列表",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/effects/index.json"
           }

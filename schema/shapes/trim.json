@@ -21,7 +21,7 @@
     "s": {
       "title": "Start",
       "description": "修剪开始。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -34,7 +34,7 @@
     "e": {
       "title": "End",
       "description": "修剪结束。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -47,7 +47,7 @@
     "o": {
       "title": "Offset",
       "description": "修剪偏移。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },

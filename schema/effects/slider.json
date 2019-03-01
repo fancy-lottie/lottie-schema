@@ -26,7 +26,7 @@
     "v": {
       "title": "Value",
       "description": "效果值。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },

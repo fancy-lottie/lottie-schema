@@ -11,7 +11,7 @@
     "ks": {
       "title": "Transform",
       "description": "转换属性",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/transform.json"
         }
@@ -22,7 +22,7 @@
       "title": "Auto-Orient",
       "description": "沿路径AE属性自动定向。",
       "type": "number",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/boolean.json"
         }
@@ -33,7 +33,7 @@
       "title": "3d Layer",
       "description": "3d图层标志",
       "type": "number",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/helpers/boolean.json"
         }
@@ -79,7 +79,7 @@
       "title": "Effects",
       "description": "效果列表",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/effects/index.json"
           }

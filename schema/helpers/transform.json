@@ -5,7 +5,7 @@
     "a": {
       "title": "Anchor Point",
       "description": "变换锚点",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -19,7 +19,7 @@
     "p": {
       "title": "Position",
       "description": "变换位置",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -33,7 +33,7 @@
     "s": {
       "title": "Scale",
       "description": "变换比例",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -47,7 +47,7 @@
     "r": {
       "title": "Rotation",
       "description": "变换旋转",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -61,7 +61,7 @@
     "o": {
       "title": "Opacity",
       "description": "变换不透明度",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -75,7 +75,7 @@
     "px": {
       "title": "Position X",
       "description": "转换位置X.",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -89,7 +89,7 @@
     "py": {
       "title": "Position Y",
       "description": "转换位置Y.",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -103,7 +103,7 @@
     "pz": {
       "title": "Position Z",
       "description": "变换位置Z.",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -117,7 +117,7 @@
     "sk": {
       "title": "Skew",
       "description": "改变歪斜",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },
@@ -131,7 +131,7 @@
     "sa": {
       "title": "Skew Axis",
       "description": "变换斜轴",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/value.json"
         },

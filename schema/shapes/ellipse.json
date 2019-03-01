@@ -27,7 +27,7 @@
     "p": {
       "title": "Position",
       "description": "Ellipse的位置",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -40,7 +40,7 @@
     "s": {
       "title": "Size",
       "description": "Ellipse的大小",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },

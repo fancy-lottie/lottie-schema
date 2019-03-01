@@ -26,7 +26,7 @@
     "p": {
       "title": "Position",
       "description": "明星的位置",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -39,7 +39,7 @@
     "ir": {
       "title": "Outer Radius",
       "description": "星的外半径。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -52,7 +52,7 @@
     "is": {
       "title": "Outer Roundness",
       "description": "明星的外圆度。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -65,7 +65,7 @@
     "r": {
       "title": "Rotation",
       "description": "明星的轮换。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -78,7 +78,7 @@
     "pt": {
       "title": "Points",
       "description": "明星的积分数。",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
@@ -92,7 +92,7 @@
       "title": "Star Type",
       "description": "明星的类型。多边形或星形。",
       "type": "object",
-      "anyOf": [
+      "oneOf": [
         {
           "standsFor": "Star",
           "value": 1

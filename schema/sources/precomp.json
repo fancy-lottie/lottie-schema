@@ -11,7 +11,7 @@
       "title": "Layers",
       "description": "预编译列表",
       "items": {
-        "anyOf": [
+        "oneOf": [
           {
             "$ref": "http://localhost:8888/schema/layers/shape.json"
           },

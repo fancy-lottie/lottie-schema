@@ -26,7 +26,7 @@
     "p": {
       "title": "Position",
       "description": "Rect的位置",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -39,7 +39,7 @@
     "s": {
       "title": "Size",
       "description": "Rect的大小",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
         },
@@ -52,7 +52,7 @@
     "r": {
       "title": "Rounded corners",
       "description": "Rect的圆角",
-      "anyOf": [
+      "oneOf": [
         {
           "$ref": "http://localhost:8888/schema/properties/Value.json"
         },
