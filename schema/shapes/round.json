@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "形状内容类型。",
+      "type": "string",
+      "const": "rd"
+    },
+    "r": {
+      "title": "Radius",
+      "description": "圆角半径",
+      "anyOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "properties": {
+    "e": {
+      "description": "关键帧段的结束值。",
+      "extended_name": "End",
+      "type": "number"
+    },
+    "s": {
+      "description": "关键帧段的起始值。",
+      "extended_name": "Start",
+      "type": "number"
+    },
+    "t": {
+      "description": "关键帧细分的开始时间。",
+      "extended_name": "Time",
+      "type": "number"
+    },
+    "i": {
+      "description": "贝塞尔曲线插值的价值。",
+      "extended_name": "In Value",
+      "type": "object",
+      "properties": {
+        "x": {
+          "description": "贝塞尔x轴",
+          "extended_name": "X axis",
+          "type": "number"
+        },
+        "y": {
+          "description": "bezier和轴",
+          "extended_name": "Y axis",
+          "type": "number"
+        }
+      }
+    }
+  }
+}

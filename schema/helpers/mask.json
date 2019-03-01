@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "inv": {
+      "title": "Inverted",
+      "description": "倒立面具标志",
+      "type": "boolean",
+      "default": false
+    },
+    "nm": {
+      "title": "Name",
+      "description": "面具名称。用于表达式和效果。",
+      "type": "string"
+    },
+    "pt": {
+      "title": "Points",
+      "description": "掩模顶点",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "anyOf": [
+          {
+            "$ref": "http://localhost:8888/schema/properties/shape.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/properties/shapeKeyframed.json"
+          }
+        ]
+      }
+    },
+    "o": {
+      "title": "Opacity",
+      "description": "遮罩不透明度。",
+      "type": "object",
+      "anyOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/const.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/constKeyframed.json"
+        }
+      ],
+      "default": {"a":0, "k":100}
+    },
+    "mode": {
+      "title": "Mode",
+      "description": "掩模模式。并非所有掩码类型都受支持。",
+      "type": "string",
+      "anyOf": [
+        {
+          "standsFor": "None",
+          "const": "n"
+        },
+        {
+          "standsFor": "Additive",
+          "const": "a"
+        },
+        {
+          "standsFor": "Subtract",
+          "const": "s"
+        },
+        {
+          "standsFor": "Intersect",
+          "const": "i"
+        },
+        {
+          "standsFor": "Lighten",
+          "const": "l"
+        },
+        {
+          "standsFor": "Darken",
+          "const": "d"
+        },
+        {
+          "standsFor": "Difference",
+          "const": "f"
+        }
+      ],
+      "default": "a",
+    }
+  }
+}

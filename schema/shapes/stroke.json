@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effect's Match Name. Used for expressions.",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effect's Name. Used for expressions.",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "Shape content type.",
+      "type": "string",
+      "const": "st"
+    },
+    "lc": {
+      "title": "Line Cap",
+      "description": "Stroke Line Cap",
+      "anyOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/lineCap.json"
+        }
+      ],
+      "type": "number"
+    },
+    "lj": {
+      "title": "Line Join",
+      "description": "Stroke Line Join",
+      "anyOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/lineJoin.json"
+        }
+      ],
+      "type": "number"
+    },
+    "ml": {
+      "title": "Miter Limit",
+      "description": "Stroke Miter Limit. Only if Line Join is set to Miter.",
+      "type": "number"
+    },
+    "o": {
+      "title": "Opacity",
+      "description": "Stroke Opacity",
+      "anyOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "w": {
+      "title": "Width",
+      "description": "Stroke Width",
+      "anyOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "c": {
+      "title": "Color",
+      "description": "Stroke Color",
+      "anyOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

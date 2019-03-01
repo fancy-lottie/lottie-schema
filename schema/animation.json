@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ip": {
+      "title": "In Point",
+      "description": "在时间点的统治者。集的初始帧动画。",
+      "type": "number"
+    },
+    "op": {
+      "title": "Out Point",
+      "description": "时间点的统治者。集的最后一帧动画",
+      "type": "number"
+    },
+    "fr": {
+      "title": "Frame Rate",
+      "description": "帧率",
+      "type": "number"
+    },
+    "w": {
+      "title": "Width",
+      "description": "合成宽度",
+      "type": "number"
+    },
+    "ddd": {
+      "title": "3-D",
+      "description": "合成具有三维层次",
+      "enum": [0, 1],
+      "type": "number"
+    },
+    "h": {
+      "title": "Height",
+      "description": "合成高度",
+      "type": "number"
+    },
+    "v": {
+      "title": "Version",
+      "description": "Bodymovin 版本",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "合成名称",
+      "type": "string"
+    },
+    "layers": {
+      "title": "Layers",
+      "description": "合成的图层",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/layers/shape.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/solid.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/precomp.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/image.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/null.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/text.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "assets": {
+      "title": "Assets",
+      "description": "源项可以在多个地方使用。comp和图像。",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/sources/image.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/sources/precomp.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "chars": {
+      "title": "Chars",
+      "description": "源字符文本图层",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "http://localhost:8888/schema/sources/chars.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  }
+}

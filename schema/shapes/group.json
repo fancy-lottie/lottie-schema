@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "形状内容类型。",
+      "type": "string",
+      "const": "gr"
+    },
+    "np": {
+      "title": "Number of Properties",
+      "description": "组属性数。用于表达式。",
+      "type": "number"
+    },
+    "it": {
+      "title": "Items",
+      "description": "组项目清单 group",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "http://localhost:8888/schema/shapes/shape.json",
+            "value": "sh"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/rect.json",
+            "value": "rc"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/ellipse.json",
+            "value": "el"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/star.json",
+            "value": "sr"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/fill.json",
+            "value": "fl"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/gFill.json",
+            "value": "gf"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/gStroke.json",
+            "value": "gs"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/stroke.json",
+            "value": "st"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/merge.json",
+            "value": "mm"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/trim.json",
+            "value": "tm"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/group.json",
+            "value": "gr"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/roundedCorners.json",
+            "value": "rd"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/shapes/transform.json",
+            "value": "tr"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  }
+}

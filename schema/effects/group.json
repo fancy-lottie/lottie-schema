@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ix": {
+      "title": "Effect Index",
+      "description": "效果指数。用于表达式。",
+      "type": "number"
+    },
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "效果类型。",
+      "type": "number",
+      "const": 5
+    },
+    "ef": {
+      "title": "Effects",
+      "description": "效果列表属性。",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "http://localhost:8888/schema/effects/index.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "en": {
+      "description": "启用AE属性值",
+      "extended_name": "Enabled",
+      "type": "number"
+    }
+  }
+}

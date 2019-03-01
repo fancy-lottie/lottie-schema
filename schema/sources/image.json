@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "h": {
+      "title": "高度",
+      "description": "图片高度",
+      "type": "number"
+    },
+    "w": {
+      "title": "宽度",
+      "description": "Image Width",
+      "type": "number"
+    },
+    "id": {
+      "title": "ID",
+      "description": "Image ID",
+      "type": "string"
+    },
+    "p": {
+      "title": "图片名称",
+      "description": "图片名称",
+      "type": "string"
+    },
+    "u": {
+      "title": "图片路径",
+      "description": "图片路径",
+      "type": "string"
+    }
+  }
+}
