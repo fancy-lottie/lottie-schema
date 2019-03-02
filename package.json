@@ -1,0 +1,20 @@
+{
+  "name": "lottie-schema",
+  "version": "1.0.0",
+  "description": "基于vscode的 json schema https://code.visualstudio.com/docs/languages/json#_mapping-to-a-schema-in-the-workspace",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lottie-Lint/lottie-schema.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lottie-Lint/lottie-schema/issues"
+  },
+  "homepage": "https://github.com/Lottie-Lint/lottie-schema#readme"
+}
