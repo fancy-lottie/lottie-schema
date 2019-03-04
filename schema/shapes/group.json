@@ -29,55 +29,55 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "#/shapes/shape.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/shape.json",
             "value": "sh"
           },
           {
-            "$ref": "#/shapes/rect.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/rect.json",
             "value": "rc"
           },
           {
-            "$ref": "#/shapes/ellipse.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/ellipse.json",
             "value": "el"
           },
           {
-            "$ref": "#/shapes/star.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/star.json",
             "value": "sr"
           },
           {
-            "$ref": "#/shapes/fill.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/fill.json",
             "value": "fl"
           },
           {
-            "$ref": "#/shapes/gFill.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/gFill.json",
             "value": "gf"
           },
           {
-            "$ref": "#/shapes/gStroke.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/gStroke.json",
             "value": "gs"
           },
           {
-            "$ref": "#/shapes/stroke.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/stroke.json",
             "value": "st"
           },
           {
-            "$ref": "#/shapes/merge.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/merge.json",
             "value": "mm"
           },
           {
-            "$ref": "#/shapes/trim.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/trim.json",
             "value": "tm"
           },
           {
-            "$ref": "#/shapes/group.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/group.json",
             "value": "gr"
           },
           {
-            "$ref": "#/shapes/roundedCorners.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/roundedCorners.json",
             "value": "rd"
           },
           {
-            "$ref": "#/shapes/transform.json",
+            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/transform.json",
             "value": "tr"
           }
         ],

@@ -49,22 +49,22 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "#/layers/shape.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/shape.json"
           },
           {
-            "$ref": "#/layers/solid.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/solid.json"
           },
           {
-            "$ref": "#/layers/precomp.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/precomp.json"
           },
           {
-            "$ref": "#/layers/image.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/image.json"
           },
           {
-            "$ref": "#/layers/null.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/null.json"
           },
           {
-            "$ref": "#/layers/text.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/text.json"
           }
         ],
         "type": "object"
@@ -77,10 +77,10 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "#/sources/image.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/image.json"
           },
           {
-            "$ref": "#/sources/precomp.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/precomp.json"
           }
         ],
         "type": "object"
@@ -93,7 +93,7 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "#/sources/chars.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/chars.json"
           }
         ],
         "type": "object"

@@ -13,7 +13,7 @@
       "description": "转换属性",
       "oneOf": [
         {
-          "$ref": "#/helpers/transform.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/transform.json"
         }
       ],
       "type": "object"
@@ -24,7 +24,7 @@
       "type": "number",
       "oneOf": [
         {
-          "$ref": "#/helpers/boolean.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
         }
       ],
       "default": 0
@@ -34,7 +34,7 @@
       "description": "混合模式",
       "oneOf": [
         {
-          "$ref": "#/helpers/blendMode.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/blendMode.json"
         }
       ],
       "type": "number",
@@ -46,7 +46,7 @@
       "type": "number",
       "oneOf": [
         {
-          "$ref": "#/helpers/boolean.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
         }
       ],
       "default": 0
@@ -97,7 +97,7 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "#/helpers/mask.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/mask.json"
           }
         ],
         "type": "object"
@@ -110,7 +110,7 @@
       "type": "number",
       "oneOf": [
         {
-          "$ref": "#/helpers/boolean.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
         }
       ]
     },

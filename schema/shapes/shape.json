@@ -28,10 +28,10 @@
       "description": "形状的顶点",
       "oneOf": [
         {
-          "$ref": "#/properties/shape.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shape.json"
         },
         {
-          "$ref": "#/properties/shapeKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shapeKeyframed.json"
         }
       ],
       "type": "object"
