@@ -12,10 +12,10 @@
       "description": "形状变换锚点",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+          "$ref": "#/properties/multiDimensional.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "#/properties/multiDimensionalKeyframed.json"
         }
       ],
       "type": "object"
@@ -25,10 +25,10 @@
       "description": "形状转换位置",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+          "$ref": "#/properties/multiDimensional.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "#/properties/multiDimensionalKeyframed.json"
         }
       ],
       "type": "object"
@@ -38,10 +38,10 @@
       "description": "形状变换比例",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+          "$ref": "#/properties/multiDimensional.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "#/properties/multiDimensionalKeyframed.json"
         }
       ],
       "type": "object"
@@ -51,10 +51,10 @@
       "description": "形状变换旋转",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+          "$ref": "#/properties/value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "#/properties/valueKeyframed.json"
         }
       ],
       "type": "object"
@@ -64,10 +64,10 @@
       "description": "形状不透明度",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+          "$ref": "#/properties/value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "#/properties/valueKeyframed.json"
         }
       ],
       "type": "object"
@@ -77,10 +77,10 @@
       "description": "形状变换偏斜",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+          "$ref": "#/properties/value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "#/properties/valueKeyframed.json"
         }
       ],
       "type": "object"
@@ -90,10 +90,10 @@
       "description": "形状变换斜轴",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+          "$ref": "#/properties/value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "#/properties/valueKeyframed.json"
         }
       ],
       "type": "object"

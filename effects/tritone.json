@@ -29,16 +29,16 @@
       "type": "array",
       "items": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
+          "$ref": "#/effects/color.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
+          "$ref": "#/effects/color.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
+          "$ref": "#/effects/color.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
+          "$ref": "#/effects/slider.json"
         }
       ]
     }
