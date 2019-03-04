@@ -29,37 +29,37 @@
       "type": "array",
       "items": [
         {
-          "$ref": "http://localhost:8888/schema/effects/color.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/checkbox.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/checkbox.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/checkbox.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/checkbox.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/color.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/slider.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/slider.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/slider.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/slider.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/slider.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/dropDown.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/dropDown.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/effects/dropDown.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/dropDown.json"
         }
       ]
     }

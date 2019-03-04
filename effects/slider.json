@@ -28,10 +28,10 @@
       "description": "效果值。",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "type": "object"

@@ -7,7 +7,7 @@
       "extended_name": "End",
       "items": {
         "type": "object",
-        "$ref": "http://localhost:8888/schema/properties/shapeProp.json"
+        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shapeProp.json"
       },
       "type": "array"
     },
@@ -16,7 +16,7 @@
       "extended_name": "Start",
       "items": {
         "type": "object",
-        "$ref": "http://localhost:8888/schema/properties/shapeProp.json"
+        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shapeProp.json"
       },
       "type": "array"
     },
