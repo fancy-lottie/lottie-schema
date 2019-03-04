@@ -8,7 +8,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "#/properties/offsetKeyframe.json"
+        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/offsetKeyframe.json"
       }
     },
     "x": {

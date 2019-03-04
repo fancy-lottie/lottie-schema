@@ -28,7 +28,7 @@
       "description": "效果值。",
       "oneOf": [
         {
-          "$ref": "#/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         }
       ],
       "type": "object"

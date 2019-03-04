@@ -3,49 +3,49 @@
   "type": "object",
   "oneOf": [
     {
-      "$ref": "#/effects/slider.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
     },
     {
-      "$ref": "#/effects/angle.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/angle.json"
     },
     {
-      "$ref": "#/effects/color.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
     },
     {
-      "$ref": "#/effects/point.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/point.json"
     },
     {
-      "$ref": "#/effects/checkbox.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/checkbox.json"
     },
     {
-      "$ref": "#/effects/group.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/group.json"
     },
     {
-      "$ref": "#/effects/noValue.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/noValue.json"
     },
     {
-      "$ref": "#/effects/dropDown.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/dropDown.json"
     },
     {
-      "$ref": "#/effects/customValue.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/customValue.json"
     },
     {
-      "$ref": "#/effects/layerIndex.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/layerIndex.json"
     },
     {
-      "$ref": "#/effects/tint.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/tint.json"
     },
     {
-      "$ref": "#/effects/fill.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/fill.json"
     },
     {
-      "$ref": "#/effects/stroke.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/stroke.json"
     },
     {
-      "$ref": "#/effects/tritone.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/tritone.json"
     },
     {
-      "$ref": "#/effects/proLevels.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/proLevels.json"
     }
   ]
 }
