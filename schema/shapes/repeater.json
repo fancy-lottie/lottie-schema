@@ -23,10 +23,10 @@
       "description": "复印数量",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/Value.json"
+          "$ref": "#/properties/Value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "#/properties/valueKeyframed.json"
         }
       ],
       "type": "object",
@@ -37,10 +37,10 @@
       "description": "副本的偏移量",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/Value.json"
+          "$ref": "#/properties/Value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "#/properties/valueKeyframed.json"
         }
       ],
       "type": "object",
@@ -51,7 +51,7 @@
       "description": "复合的副本",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/composite.json"
+          "$ref": "#/helpers/composite.json"
         }
       ],
       "type": "number",
@@ -62,7 +62,7 @@
       "description": "转换每个转发器副本的值",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/transform.json"
+          "$ref": "#/helpers/transform.json"
         }
       ],
       "type": "object"

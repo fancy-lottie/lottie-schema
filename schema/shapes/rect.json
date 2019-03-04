@@ -28,10 +28,10 @@
       "description": "Rect的位置",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+          "$ref": "#/properties/multiDimensional.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "#/properties/multiDimensionalKeyframed.json"
         }
       ],
       "type": "object"
@@ -41,10 +41,10 @@
       "description": "Rect的大小",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+          "$ref": "#/properties/multiDimensional.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "#/properties/multiDimensionalKeyframed.json"
         }
       ],
       "type": "object"
@@ -54,10 +54,10 @@
       "description": "Rect的圆角",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/Value.json"
+          "$ref": "#/properties/Value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "#/properties/valueKeyframed.json"
         }
       ],
       "type": "object"

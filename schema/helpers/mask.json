@@ -21,10 +21,10 @@
         "type": "object",
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shape.json"
+            "$ref": "#/properties/shape.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shapeKeyframed.json"
+            "$ref": "#/properties/shapeKeyframed.json"
           }
         ]
       }
@@ -35,10 +35,10 @@
       "type": "object",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/const.json"
+          "$ref": "#/properties/const.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/constKeyframed.json"
+          "$ref": "#/properties/constKeyframed.json"
         }
       ],
       "default": {"a":0, "k":100}

@@ -12,7 +12,7 @@
       "title": "Transform",
       "description": "转换属性",
       "oneOf": [{
-        "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/transform.json"
+        "$ref": "#/helpers/transform.json"
       }],
       "type": "object"
     },
@@ -20,7 +20,7 @@
       "title": "Auto-Orient",
       "description": "沿路径AE属性自动定向。",
       "oneOf": [{
-        "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
+        "$ref": "#/helpers/boolean.json"
       }],
       "type": "number",
       "default": 0
@@ -29,7 +29,7 @@
       "title": "Blend Mode",
       "description": "混合模式",
       "oneOf": [{
-        "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/blendMode.json"
+        "$ref": "#/helpers/blendMode.json"
       }],
       "type": "number",
       "default": 0
@@ -38,7 +38,7 @@
       "title": "3d Layer",
       "description": "3d图层标志",
       "oneOf": [{
-        "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
+        "$ref": "#/helpers/boolean.json"
       }],
       "type": "number",
       "default": 0
@@ -88,7 +88,7 @@
       "description": "面具清单",
       "items": {
         "oneOf": [{
-          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/mask.json"
+          "$ref": "#/helpers/mask.json"
         }],
         "type": "object"
       },
@@ -98,7 +98,7 @@
       "title": "Effects",
       "description": "沿路径AE属性自动定向。",
       "oneOf": [{
-        "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
+        "$ref": "#/helpers/boolean.json"
       }],
       "type": "number"
     },
@@ -130,10 +130,10 @@
                     "title": "Position",
                     "description": "文本动画师位置",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+                        "$ref": "#/properties/multiDimensional.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+                        "$ref": "#/properties/multiDimensionalKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -142,10 +142,10 @@
                     "title": "Anchor Point",
                     "description": "文本动画师锚点",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+                        "$ref": "#/properties/multiDimensional.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+                        "$ref": "#/properties/multiDimensionalKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -154,10 +154,10 @@
                     "title": "Scale",
                     "description": "文本动画师比例",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+                        "$ref": "#/properties/multiDimensional.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+                        "$ref": "#/properties/multiDimensionalKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -166,10 +166,10 @@
                     "title": "Skew",
                     "description": "文本动画师歪斜",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -178,10 +178,10 @@
                     "title": "Skew Axis",
                     "description": "文本动画师Skew Axis",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -190,10 +190,10 @@
                     "title": "Rotation",
                     "description": "文本动画师旋转",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -202,10 +202,10 @@
                     "title": "Opacity",
                     "description": "文本动画师不透明度",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -214,10 +214,10 @@
                     "title": "Stroke Width",
                     "description": "文本动画师笔画宽度",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -226,10 +226,10 @@
                     "title": "Stroke Color",
                     "description": "文本动画师笔画颜色",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+                        "$ref": "#/properties/multiDimensional.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+                        "$ref": "#/properties/multiDimensionalKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -238,10 +238,10 @@
                     "title": "Fill Color",
                     "description": "文本动画师填充颜色",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+                        "$ref": "#/properties/multiDimensional.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+                        "$ref": "#/properties/multiDimensionalKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -250,10 +250,10 @@
                     "title": "Fill Hue",
                     "description": "文本动画师填充色调",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -262,10 +262,10 @@
                     "title": "Fill Saturation",
                     "description": "文本动画师填充饱和度",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -274,10 +274,10 @@
                     "title": "Fill Brightness",
                     "description": "文本动画师填充亮度",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -286,10 +286,10 @@
                     "title": "Tracking",
                     "description": "文本动画师跟踪",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "object"
@@ -310,10 +310,10 @@
                     "title": "Max Amount",
                     "description": "选择器最大金额",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "number"
@@ -322,10 +322,10 @@
                     "title": "Min Ease",
                     "description": "级别敏捷",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "number"
@@ -334,10 +334,10 @@
                     "title": "Max Ease",
                     "description": "级别最大限度",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "number"
@@ -346,7 +346,7 @@
                     "title": "Randomize",
                     "description": "选择器随机化顺序",
                     "oneOf": [{
-                      "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
+                      "$ref": "#/helpers/boolean.json"
                     }],
                     "type": "number"
                   },
@@ -354,7 +354,7 @@
                     "title": "Shape",
                     "description": "选择器形状",
                     "oneOf": [{
-                      "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/textShape.json"
+                      "$ref": "#/helpers/textShape.json"
                     }],
                     "type": "number"
                   },
@@ -362,7 +362,7 @@
                     "title": "Based On",
                     "description": "基于的选择器",
                     "oneOf": [{
-                      "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/textBased.json"
+                      "$ref": "#/helpers/textBased.json"
                     }],
                     "type": "number"
                   },
@@ -375,10 +375,10 @@
                     "title": "Start",
                     "description": "选择器启动",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "number"
@@ -387,10 +387,10 @@
                     "title": "End",
                     "description": "选择器结束",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "number"
@@ -399,10 +399,10 @@
                     "title": "Offset",
                     "description": "选择器偏移",
                     "oneOf": [{
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
+                        "$ref": "#/properties/value.json"
                       },
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+                        "$ref": "#/properties/valueKeyframed.json"
                       }
                     ],
                     "type": "number"
@@ -422,7 +422,7 @@
               "title": "Anchor Point Grouping",
               "description": "文本锚点分组",
               "oneOf": [{
-                "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/textGrouping.json"
+                "$ref": "#/helpers/textGrouping.json"
               }],
               "type": "number"
             },
@@ -430,10 +430,10 @@
               "title": "Grouping Alignment",
               "description": "文本分组对齐",
               "oneOf": [{
-                  "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+                  "$ref": "#/properties/multiDimensional.json"
                 },
                 {
-                  "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+                  "$ref": "#/properties/multiDimensionalKeyframed.json"
                 }
               ],
               "type": "number"
