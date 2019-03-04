@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "形状内容类型。",
+      "type": "string",
+      "const": "gs"
+    },
+    "o": {
+      "title": "Opacity",
+      "description": "中风不透明度",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "s": {
+      "title": "Start Point",
+      "description": "渐变起点",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "e": {
+      "title": "End Point",
+      "description": "渐变终点",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "t": {
+      "title": "Type",
+      "description": "梯度类型",
+      "oneOf": [
+        {
+          "standsFor": "Linear",
+          "value": 1
+        },
+        {
+          "standsFor": "Radial",
+          "value": 2
+        }
+      ],
+      "type": "object"
+    },
+    "h": {
+      "title": "Highlight Length",
+      "description": "渐变高光长度。仅当类型为径向时",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "a": {
+      "title": "Highlight Angle",
+      "description": "突出显示角度。仅当类型为径向时",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "g": {
+      "title": "Gradient Colors",
+      "description": "渐变色",
+      "type": "object"
+    },
+    "w": {
+      "title": "Stroke Width",
+      "description": "渐变笔画宽度",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/Value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    },
+    "lc": {
+      "title": "Line Cap",
+      "description": "渐变笔划线帽",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/lineCap.json"
+        }
+      ],
+      "type": "number"
+    },
+    "lj": {
+      "title": "Line Join",
+      "description": "渐变笔划线加入",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/helpers/lineJoin.json"
+        }
+      ],
+      "type": "number"
+    },
+    "ml": {
+      "title": "Miter Limit",
+      "description": "梯度中风斜接限制。仅当“线路连接”设置为“斜接”时。",
+      "type": "number"
+    }
+  }
+}

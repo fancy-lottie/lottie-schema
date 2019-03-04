@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ch": {
+      "title": "Character",
+      "description": "人物价值",
+      "type": "string"
+    },
+    "fFamily": {
+      "title": "Font Family",
+      "description": "字符字体系列",
+      "type": "string"
+    },
+    "size": {
+      "title": "Font Size",
+      "description": "字符字体大小",
+      "type": "string"
+    },
+    "style": {
+      "title": "Font Style",
+      "description": "字符字体样式",
+      "type": "string"
+    },
+    "w": {
+      "title": "Width",
+      "description": "字符宽度",
+      "type": "number"
+    },
+    "data": {
+      "title": "Character Data",
+      "description": "人物数据",
+      "properties": [
+        {
+          "title": "Character Shapes",
+          "description": "字符组成形状",
+          "items": {
+            "properties": [
+              {
+                "title": "Items",
+                "description": "角色物品",
+                "properties": [
+                  {
+                    "title": "keys",
+                    "description": "字符项键",
+                    "oneOf": [
+                      {
+                        "$ref": "http://localhost:8888/schema/properties/shape.json"
+                      }
+                    ],
+                    "type": "object"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

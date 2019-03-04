@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "k": {
+      "description": "属性值关键帧",
+      "extended_name": "Keyframes",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "http://localhost:8888/schema/properties/valueKeyframe.json"
+      }
+    },
+    "x": {
+      "description": "财产表达。修改值的AE表达式。",
+      "extended_name": "Expression",
+      "type": "string"
+    },
+    "ix": {
+      "description": "ix值,用于表达式。",
+      "extended_name": "Property Index",
+      "type": "string"
+    },
+    "a": {
+      "description": "定义属性是否为动画",
+      "extended_name": "Animated",
+      "type": "number"
+    }
+  }
+}

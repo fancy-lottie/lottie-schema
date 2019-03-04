@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "title": "ID",
+      "description": "预编译ID",
+      "type": "string"
+    },
+    "layers": {
+      "title": "Layers",
+      "description": "预编译列表",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "http://localhost:8888/schema/layers/shape.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/solid.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/comp.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/image.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/null.json"
+          },
+          {
+            "$ref": "http://localhost:8888/schema/layers/text.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  }
+}

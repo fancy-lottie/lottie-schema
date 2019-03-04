@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ix": {
+      "title": "Effect Index",
+      "description": "效果指数。用于表达式。",
+      "type": "number"
+    },
+    "mn": {
+      "title": "Match Name",
+      "description": "After Effects匹配名称。用于表达式。",
+      "type": "string"
+    },
+    "nm": {
+      "title": "Name",
+      "description": "After Effects名称。用于表达式。",
+      "type": "string"
+    },
+    "ty": {
+      "title": "Type",
+      "description": "效果类型。",
+      "type": "number",
+      "const": 7
+    },
+    "v": {
+      "title": "Value",
+      "description": "效果值。",
+      "oneOf": [
+        {
+          "$ref": "http://localhost:8888/schema/properties/value.json"
+        },
+        {
+          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

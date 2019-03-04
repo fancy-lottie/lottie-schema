@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "k": {
+      "description": "属性值关键帧",
+      "extended_name": "Keyframes",
+      "items": {
+        "type": "object",
+        "$ref": "http://localhost:8888/schema/properties/shapePropKeyframe.json"
+      },
+      "type": "array"
+    },
+    "x": {
+      "description": "财产表达。修改值的AE表达式。",
+      "extended_name": "Expression",
+      "type": "string"
+    },
+    "ix": {
+      "description": "ix值,用于表达式。",
+      "extended_name": "Property Index",
+      "type": "string"
+    },
+    "ti": {
+      "description": "在Spatial Tangent中。仅适用于空间属性。一组数字。",
+      "extended_name": "In Tangent",
+      "type": "array"
+    },
+    "to": {
+      "description": "Out Spatial Tangent。仅适用于空间属性。一组数字。",
+      "extended_name": "Out Tangent",
+      "type": "array"
+    },
+    "a": {
+      "description": "定义属性是否为动画",
+      "extended_name": "Animated",
+      "type": "number"
+    }
+  }
+}
