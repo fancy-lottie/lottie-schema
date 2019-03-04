@@ -7,10 +7,10 @@
       "description": "变换锚点",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
         },
       ],
       "default": {"a":0, "k":[0, 0, 0]},
@@ -21,10 +21,10 @@
       "description": "变换位置",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
         }
       ],
       "default": {"a":0, "k":[0, 0, 0]},
@@ -35,10 +35,10 @@
       "description": "变换比例",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
         }
       ],
       "default": {"a":0, "k":[100, 100, 100]},
@@ -49,10 +49,10 @@
       "description": "变换旋转",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "default": {"a":0, "k":0},
@@ -63,10 +63,10 @@
       "description": "变换不透明度",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "default": {"a":0, "k":100},
@@ -77,10 +77,10 @@
       "description": "转换位置X.",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "default": {"a":0, "k":0},
@@ -91,10 +91,10 @@
       "description": "转换位置Y.",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "default": {"a":0, "k":0},
@@ -105,10 +105,10 @@
       "description": "变换位置Z.",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "default": {"a":0, "k":0},
@@ -119,10 +119,10 @@
       "description": "改变歪斜",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "default": {"a":0, "k":0},
@@ -133,7 +133,7 @@
       "description": "变换斜轴",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/value.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
         },
         {
           "$ref": "http://localhost:8888/schema/properties/valueKeyframed.json"

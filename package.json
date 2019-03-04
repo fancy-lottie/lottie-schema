@@ -4,7 +4,7 @@
   "description": "基于vscode的 json schema https://code.visualstudio.com/docs/languages/json#_mapping-to-a-schema-in-the-workspace",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d schema"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Lottie-Lint/lottie-schema/issues"
   },
-  "homepage": "https://github.com/Lottie-Lint/lottie-schema#readme"
+  "homepage": "https://github.com/Lottie-Lint/lottie-schema#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "dependencies": {}
 }

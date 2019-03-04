@@ -3,49 +3,49 @@
   "type": "object",
   "oneOf": [
     {
-      "$ref": "http://localhost:8888/schema/effects/slider.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/angle.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/angle.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/color.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/point.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/point.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/checkbox.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/checkbox.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/group.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/group.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/noValue.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/noValue.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/dropDown.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/dropDown.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/customValue.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/customValue.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/layerIndex.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/layerIndex.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/tint.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/tint.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/fill.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/fill.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/stroke.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/stroke.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/tritone.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/tritone.json"
     },
     {
-      "$ref": "http://localhost:8888/schema/effects/proLevels.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/proLevels.json"
     }
   ]
 }

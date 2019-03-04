@@ -8,7 +8,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "http://localhost:8888/schema/properties/valueKeyframe.json"
+        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframe.json"
       }
     },
     "x": {

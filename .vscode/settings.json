@@ -5,7 +5,7 @@
         "/data/*.json",
         "/data/**/*.json"
       ],
-      "url": "http://127.0.0.1:8888/schema/animation.json"
+      "url": "https://lottie-lint.github.io/lottie-schema/animation.json"
     }
   ]
 }

@@ -29,10 +29,10 @@
       "description": "Ellipse的位置",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
         }
       ],
       "type": "object"
@@ -42,10 +42,10 @@
       "description": "Ellipse的大小",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensional.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
         },
         {
-          "$ref": "http://localhost:8888/schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
         }
       ],
       "type": "object"

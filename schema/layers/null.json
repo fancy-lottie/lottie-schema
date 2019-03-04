@@ -13,7 +13,7 @@
       "description": "转换属性",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/helpers/transform.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/transform.json"
         }
       ],
       "type": "object"
@@ -24,7 +24,7 @@
       "type": "number",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/helpers/boolean.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
         }
       ],
       "default": 0
@@ -35,7 +35,7 @@
       "type": "number",
       "oneOf": [
         {
-          "$ref": "http://localhost:8888/schema/helpers/boolean.json"
+          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/boolean.json"
         }
       ],
       "default": 0
@@ -81,7 +81,7 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "http://localhost:8888/schema/effects/index.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/effects/index.json"
           }
         ],
         "type": "object"
