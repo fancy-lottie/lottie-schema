@@ -1,24 +1,30 @@
 {
   "name": "lottie-schema",
-  "version": "1.0.0",
-  "description": "基于vscode的 json schema https://code.visualstudio.com/docs/languages/json#_mapping-to-a-schema-in-the-workspace",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/lottie-schema.js",
+  "module": "dist/lottie-schema.esm.js",
+  "unpkg": "dist/lottie-schema.umd.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "/lottie-schema",
   "scripts": {
-    "deploy": "gh-pages -d schema"
+    "dev": "umi doc dev",
+    "build": "umi lib build",
+    "deploy": "gh-pages -d schema",
+    "test": "umi-test",
+    "test:w": "umi-test --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lottie-Lint/lottie-schema.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lottie-Lint/lottie-schema/issues"
-  },
-  "homepage": "https://github.com/Lottie-Lint/lottie-schema#readme",
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "umi": "^2.0.0",
+    "umi-plugin-library": "^1.0.1-0",
+    "umi-test": "^1.4.4"
   },
-  "dependencies": {}
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12"
+  }
 }
