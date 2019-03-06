@@ -1,4 +1,12 @@
 
+0.0.4 / 2019-03-06
+==================
+
+**features**
+  * [[`949110d`](http://github.com/Lottie-Lint/lottie-schema/commit/949110dda15e9d7d387998036db9b7d8b959fbd5)] - feat: update readme (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`062896e`](http://github.com/Lottie-Lint/lottie-schema/commit/062896e812cde63d134b26e8ecb9d2292a0bfe62)] - feat: add format (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`d0440a4`](http://github.com/Lottie-Lint/lottie-schema/commit/d0440a4fd5c472cac6d87d6bf9254337590a94e3)] - feat: js -> ts (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.3 / 2019-03-06
 ==================
 
