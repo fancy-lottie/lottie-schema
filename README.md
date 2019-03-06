@@ -11,7 +11,10 @@ schema关系 大图:https://www.processon.com/view/link/5c2ece6ae4b08a768398b06d
 
 ```bash
 npm install
+# 打包
 npm run build
+# 发布 json schema
+npm run deploy
 ```
 
 ```js
