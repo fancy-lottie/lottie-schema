@@ -1,7 +1,7 @@
 import {
   fromJS
 } from 'immutable';
-export default new fromJS({
+export default fromJS({
   "id": "bgImage",
   "w": 1024,
   "h": 350,

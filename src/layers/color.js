@@ -1,7 +1,7 @@
 import {
   fromJS
 } from 'immutable';
-export default new fromJS({
+export default fromJS({
   "ddd": 0,
   "ind": 1,
   "ty": 1,
