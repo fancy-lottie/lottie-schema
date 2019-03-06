@@ -3,13 +3,13 @@ import {
   List,
 } from 'immutable';
 
-import LayerColor from './layers/color';
+// import LayerColor from './layers/color';
 import LayerImage from './layers/image';
 import AssetImage from './assets/image';
 
 export default class LottieSchema {
-  constructor() {
-    this.LottieJson = Map({
+  constructor(options) {
+    const defaultConfig = {
       v: '5.4.4',
       fr: 25,
       ip: 0,
@@ -18,9 +18,13 @@ export default class LottieSchema {
       h: 350,
       nm: '空',
       ddd: 0,
+    };
+    this.LottieJson = Map({
       assets: new List(),
       layers: new List(),
       markers: new List(),
+      ...defaultConfig,
+      ...options,
     });
   }
 
