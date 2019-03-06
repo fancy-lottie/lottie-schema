@@ -3,11 +3,14 @@ import LottieSchema from '../src/index';
 const log = obj => console.log(JSON.stringify(obj))
 
 it('改变size', () => {
-  const lottieSchema = new LottieSchema();
-  lottieSchema.setSize({
-    width: '233',
-    height: '322',
-  })
+  const lottieSchema = new LottieSchema({
+    w: 300,
+    h: 300,
+  });
+  // lottieSchema.setSize({
+  //   width: '233',
+  //   height: '322',
+  // })
   // expect(lottieSchema.getSize()).toEqual({
   //   width: '233',
   //   height: '322',
@@ -19,7 +22,10 @@ it('改变size', () => {
 
 
 it('changeBgImage', () => {
-  const lottieSchema = new LottieSchema();
+  const lottieSchema = new LottieSchema({
+    w: 300,
+    h: 300,
+  });
   lottieSchema.addBgImage({
     url: 'https://gw.alipayobjects.com/zos/antfincdn/I9Bu85KAaq/750x300.png',
     width: 750,
@@ -36,15 +42,15 @@ it('changeBgImage', () => {
   //     color: '#0ae'
   //   }
   // })
-  lottieSchema.changeBgImage({
-    size: {
-      width: 500,
-      height: 150,
-    },
-    position: {
-      x: 100,
-      y: 150,
-    }
-  })
+  // lottieSchema.changeBgImage({
+  //   size: {
+  //     width: 500,
+  //     height: 150,
+  //   },
+  //   position: {
+  //     x: 100,
+  //     y: 150,
+  //   }
+  // })
   log(lottieSchema.getObj())
 });

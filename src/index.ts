@@ -74,16 +74,20 @@ export default class LottieSchema {
    */
   public addBgImage({ url, width, height }: { url: string; width: number; height: number }) {
     this.delBgImage();
+    // 获取画布属性
     const { width: canvasWidth, height: canvasHeight, ip, op } = this.getSize();
     const layers = this.lottieJSON.get('layers');
     const assets = this.lottieJSON.get('assets');
+    // 设置背景图片宽高Url属性
     const imageAsset = assetImage
       .set('p', url)
       .set('w', width)
       .set('h', height)
       .set('id', 'bgImage');
-    const wScale = width < canvasWidth ? 100 : (canvasWidth / width).toFixed(2);
-    const hScale = height < canvasHeight ? 100 : (canvasHeight / height).toFixed(2);
+    // 目标是 contain 包含适配, 以最小缩放为准
+    const wScale = Number.parseFloat(((canvasWidth / width) * 100).toFixed(3))
+    const hScale = Number.parseFloat(((canvasHeight / height) * 100).toFixed(3))
+    const scale = wScale > hScale ? hScale : wScale;
     const imageLayer = layerImage
       .set('refId', 'bgImage')
       .set('ln', 'bgImage')
@@ -92,7 +96,7 @@ export default class LottieSchema {
       .set('ip', ip)
       .set('op', op)
       .setIn(['ks', 'a', 'k'], [width / 2, height / 2, 0])
-      .setIn(['ks', 's', 'k'], [wScale, hScale, 0])
+      .setIn(['ks', 's', 'k'], [scale, scale, 0])
       .setIn(['ks', 'p', 'k'], [canvasWidth / 2, canvasHeight / 2, 0]);
     this.lottieJSON = this.lottieJSON
       .set('assets', assets.push(imageAsset))
@@ -120,34 +124,19 @@ export default class LottieSchema {
       bgLayerIdx,
     };
   }
-  /**
-   * data: color; url, base64, width, height
-   */
-  public changeBgImage({ size, position }: { size: any | undefined; position: any | undefined }) {
-    const { width, height } = size;
+
+  public changeBgImage({ scale, position = {} }: { scale: number; position?: any }) {
+    // const { width, height } = size;
     const { x, y } = position;
     const imageIdx = this.checkBgImageExist();
     if (!imageIdx) {
       return;
     }
-    const { bgAssetIdx, bgLayerIdx } = imageIdx;
+    const { bgLayerIdx } = imageIdx;
     let layers = this.lottieJSON.get('layers').get(bgLayerIdx);
-    const assets = this.lottieJSON.get('assets').get(bgAssetIdx);
-    const imgWidth = assets.get('w');
-    const imgHeight = assets.get('h');
     // 图片缩放
-    if ((width || height) && (width !== imgWidth || height !== imgHeight)) {
-      const wScale = width
-        ? width > imgWidth
-          ? (imgWidth / width).toFixed(2)
-          : (width / imgWidth).toFixed(2)
-        : 100;
-      const hScale = height
-        ? height > imgHeight
-          ? (imgHeight / height).toFixed(2)
-          : (height / imgHeight).toFixed(2)
-        : 100;
-      layers = layers.setIn(['ks', 's', 'k'], [wScale, hScale, 0]);
+    if (scale) {
+      layers = layers.setIn(['ks', 's', 'k'], [scale, scale, 0]);
     }
     // 图片位移
     if (x || y) {
@@ -155,8 +144,12 @@ export default class LottieSchema {
       layers = layers.setIn(['ks', 'p', 'k'], [!x ? xx : x, !y ? yy : y, 0]);
     }
     // 图片资源替换的情况,在外围调用
-    this.lottieJSON = this.lottieJSON.set('layers', layers);
+    this.lottieJSON = this.lottieJSON.set(
+      'layers',
+      this.lottieJSON.get('layers').set(bgLayerIdx, layers)
+    );
   }
+
   /* addBgColor(color) {
     const {
       width,
