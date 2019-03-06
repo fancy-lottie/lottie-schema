@@ -127,13 +127,11 @@ export default class LottieSchema {
     }
   }
   /**
-   * type: bgColor bgImage
    * data: color; url, base64, width, height
    */
   changeBgImage({
     size,
     position,
-    url,
   }) {
     const {
       width,
