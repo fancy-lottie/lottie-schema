@@ -8,7 +8,8 @@ import layerImage from './layers/image';
 import assetImage from './assets/image';
 
 export default class LottieSchema {
-  constructor(options) {
+  private lottieJSON: any;
+  constructor(options?: any) {
     const defaultConfig = {
       v: '5.4.4',
       fr: 25,
@@ -16,7 +17,7 @@ export default class LottieSchema {
       op: 750,
       w: 1024,
       h: 350,
-      nm: '空',
+      nm: '初始化空层',
       ddd: 0,
     };
     this.lottieJSON = Map({
@@ -28,18 +29,18 @@ export default class LottieSchema {
     });
   }
 
-  getJson() {
+  public getJSON() {
     return JSON.stringify(this.lottieJSON);
   }
-  getObj() {
+  public getObj() {
     return this.lottieJSON.toJS();
   }
 
-  getVersion() {
+  public getVersion() {
     return this.lottieJSON.get('v');
   }
 
-  getSize() {
+  public getSize() {
     return {
       ip: this.lottieJSON.get('ip'),
       op: this.lottieJSON.get('op'),
@@ -48,9 +49,12 @@ export default class LottieSchema {
     }
   }
 
-  setSize({
+  public setSize({
     width,
-    height
+    height,
+  }: {
+    width: string;
+    height: string;
   }) {
     if (width) {
       this.lottieJSON = this.lottieJSON.set('w', width);
@@ -66,10 +70,14 @@ export default class LottieSchema {
    * 图片位移: ks.p [x, y, 100] 位移移动的位置是 图片锚点 相对于 画布的 x,y
    * 要判断图片的大小和画布大小, 以 画布包含住 背景图片为目的, 实现 contain
    */
-  addBgImage({
+  public addBgImage({
     url,
     width,
     height,
+  }: {
+    url: string;
+    width: number;
+    height: number;
   }) {
     const imageIdx = this.checkBgImageExist()
     if (imageIdx) {
@@ -105,17 +113,17 @@ export default class LottieSchema {
       .set('layers', layers.push(imageLayer))
   }
 
-  checkBgImageExist() {
+  public checkBgImageExist() {
     const layers = this.lottieJSON.get('layers')
     const assets = this.lottieJSON.get('assets')
     const bgLayer = layers.last()
     if (!bgLayer || !assets.size) {
       return false;
     }
-    const bgAssetIdx = assets.findIndex((value, index, array) => {
+    const bgAssetIdx = assets.findIndex((value: any) => {
       return value.get('id') === 'bgImage';
     })
-    const bgLayerIdx = layers.findIndex((value, index, array) => {
+    const bgLayerIdx = layers.findIndex((value: any) => {
       return value.get('refId') === 'bgImage';
     });
     if (!Number.isInteger(bgAssetIdx) || !Number.isInteger(bgLayerIdx)) {
@@ -129,18 +137,21 @@ export default class LottieSchema {
   /**
    * data: color; url, base64, width, height
    */
-  changeBgImage({
+  public changeBgImage({
     size,
     position,
+  }: {
+    size: any | undefined;
+    position: any | undefined;
   }) {
     const {
       width,
       height,
-    } = size || {};
+    } = size;
     const {
       x,
       y,
-    } = position || {};
+    } = position;
     const imageIdx = this.checkBgImageExist()
     if (!imageIdx) {
       return;
@@ -150,7 +161,7 @@ export default class LottieSchema {
       bgLayerIdx,
     } = imageIdx;
     let layers = this.lottieJSON.get('layers').get(bgLayerIdx)
-    let assets = this.lottieJSON.get('assets').get(bgAssetIdx)
+    const assets = this.lottieJSON.get('assets').get(bgAssetIdx)
     const imgWidth = assets.get('w')
     const imgHeight = assets.get('h')
     // 图片缩放
@@ -161,8 +172,8 @@ export default class LottieSchema {
     }
     // 图片位移
     if (x || y) {
-      const [_x, _y, _z] = layers.getIn(['ks', 'p', 'k'])
-      layers = layers.setIn(['ks', 'p', 'k'], [!x ? _x : x, !y ? _y : y, 0])
+      const [xx, yy] = layers.getIn(['ks', 'p', 'k'])
+      layers = layers.setIn(['ks', 'p', 'k'], [!x ? xx : x, !y ? yy : y, 0])
     }
     // 图片资源替换的情况,在外围调用
     this.lottieJSON = this.lottieJSON.set('layers', layers)

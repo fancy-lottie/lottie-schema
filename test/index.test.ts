@@ -1,4 +1,5 @@
 import LottieSchema from '../src/index';
+// tslint:disable-next-line:no-console
 const log = obj => console.log(JSON.stringify(obj))
 
 it('改变size', () => {
