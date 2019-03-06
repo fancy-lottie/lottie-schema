@@ -4,8 +4,8 @@ import {
 } from 'immutable';
 
 // import LayerColor from './layers/color';
-import LayerImage from './layers/image';
-import AssetImage from './assets/image';
+import layerImage from './layers/image';
+import assetImage from './assets/image';
 
 export default class LottieSchema {
   constructor(options) {
@@ -85,13 +85,13 @@ export default class LottieSchema {
     } = this.getSize();
     const layers = this.lottieJson.get('layers')
     const assets = this.lottieJson.get('assets')
-    const imageAsset = AssetImage.set('p', url)
+    const imageAsset = assetImage.set('p', url)
       .set('w', width)
       .set('h', height)
       .set('id', 'bgImage')
     const wScale = width < canvasWidth ? 100 : (canvasWidth / width).toFixed(2)
     const hScale = height < canvasHeight ? 100 : (canvasHeight / height).toFixed(2)
-    const imageLayer = LayerImage.set('refId', 'bgImage')
+    const imageLayer = layerImage.set('refId', 'bgImage')
       .set('ln', 'bgImage')
       .set('cl', 'handlehook')
       .set('nm', '背景图片')
