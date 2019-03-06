@@ -1,12 +1,27 @@
 {
   "compilerOptions": {
     "strictNullChecks": true,
-    "moduleResolution": "node",
     "experimentalDecorators": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-    "noImplicitAny": true,
-    "lib": ["es2015"]
+    "lib": ["es2015"],
+    "strict": true,
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "charset": "utf8",
+    "pretty": true,
+    // "noEmitOnError": false,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strictPropertyInitialization": false,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "inlineSourceMap": false,
+    "importHelpers": false,
+    "declaration": true,
   },
   "include": [
     "src"

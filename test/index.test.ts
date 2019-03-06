@@ -48,7 +48,3 @@ it('changeBgImage', () => {
   })
   log(lottieSchema.getObj())
 });
-
-it('test', () => {
-  expect(Number.isInteger(false)).toBe(false)
-})
