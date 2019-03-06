@@ -1,6 +1,6 @@
 {
   "name": "lottie-schema",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "files": [
     "dist"
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.9",
     "gh-pages": "^2.0.1",
+    "lottie-web": "^5.4.4",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.1",

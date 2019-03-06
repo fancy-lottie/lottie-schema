@@ -1,4 +1,13 @@
 
+0.0.5 / 2019-03-07
+==================
+
+**features**
+  * [[`f6ad73a`](http://github.com/Lottie-Lint/lottie-schema/commit/f6ad73aab2bce56a6a90ce8da0b48cfe0f61a38e)] - feat: update readme (chenpx976 <<chenpx976@gmail.com>>)
+
+**fixes**
+  * [[`a94bb6c`](http://github.com/Lottie-Lint/lottie-schema/commit/a94bb6c968dc52b861e43321a9902c22fc9446b8)] - fix: 修复背景图片适配问题 (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.4 / 2019-03-06
 ==================
 
