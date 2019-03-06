@@ -19,7 +19,7 @@ export default class LottieSchema {
       nm: '空',
       ddd: 0,
     };
-    this.lottieJson = Map({
+    this.lottieJSON = Map({
       assets: List(),
       layers: List(),
       markers: List(),
@@ -29,22 +29,22 @@ export default class LottieSchema {
   }
 
   getJson() {
-    return JSON.stringify(this.lottieJson);
+    return JSON.stringify(this.lottieJSON);
   }
   getObj() {
-    return this.lottieJson.toJS();
+    return this.lottieJSON.toJS();
   }
 
   getVersion() {
-    return this.lottieJson.get('v');
+    return this.lottieJSON.get('v');
   }
 
   getSize() {
     return {
-      ip: this.lottieJson.get('ip'),
-      op: this.lottieJson.get('op'),
-      width: this.lottieJson.get('w'),
-      height: this.lottieJson.get('h'),
+      ip: this.lottieJSON.get('ip'),
+      op: this.lottieJSON.get('op'),
+      width: this.lottieJSON.get('w'),
+      height: this.lottieJSON.get('h'),
     }
   }
 
@@ -53,10 +53,10 @@ export default class LottieSchema {
     height
   }) {
     if (width) {
-      this.lottieJson = this.lottieJson.set('w', width);
+      this.lottieJSON = this.lottieJSON.set('w', width);
     }
     if (height) {
-      this.lottieJson = this.lottieJson.set('h', height);
+      this.lottieJSON = this.lottieJSON.set('h', height);
     }
   }
   /**
@@ -73,9 +73,9 @@ export default class LottieSchema {
   }) {
     const imageIdx = this.checkBgImageExist()
     if (imageIdx) {
-      this.lottieJson = this.lottieJson
-        .set('assets', this.lottieJson.get('assets').delete(imageIdx.bgAssetIdx))
-        .set('layers', this.lottieJson.get('layers').delete(imageIdx.bgLayerIdx))
+      this.lottieJSON = this.lottieJSON
+        .set('assets', this.lottieJSON.get('assets').delete(imageIdx.bgAssetIdx))
+        .set('layers', this.lottieJSON.get('layers').delete(imageIdx.bgLayerIdx))
     }
     const {
       width: canvasWidth,
@@ -83,8 +83,8 @@ export default class LottieSchema {
       ip,
       op,
     } = this.getSize();
-    const layers = this.lottieJson.get('layers')
-    const assets = this.lottieJson.get('assets')
+    const layers = this.lottieJSON.get('layers')
+    const assets = this.lottieJSON.get('assets')
     const imageAsset = assetImage.set('p', url)
       .set('w', width)
       .set('h', height)
@@ -100,14 +100,14 @@ export default class LottieSchema {
       .setIn(['ks', 'a', 'k'], [width / 2, height / 2, 0])
       .setIn(['ks', 's', 'k'], [wScale, hScale, 0])
       .setIn(['ks', 'p', 'k'], [canvasWidth / 2, canvasHeight / 2, 0])
-    this.lottieJson = this.lottieJson
+    this.lottieJSON = this.lottieJSON
       .set('assets', assets.push(imageAsset))
       .set('layers', layers.push(imageLayer))
   }
 
   checkBgImageExist() {
-    const layers = this.lottieJson.get('layers')
-    const assets = this.lottieJson.get('assets')
+    const layers = this.lottieJSON.get('layers')
+    const assets = this.lottieJSON.get('assets')
     const bgLayer = layers.last()
     if (!bgLayer || !assets.size) {
       return false;
@@ -151,8 +151,8 @@ export default class LottieSchema {
       bgAssetIdx,
       bgLayerIdx,
     } = imageIdx;
-    let layers = this.lottieJson.get('layers').get(bgLayerIdx)
-    let assets = this.lottieJson.get('assets').get(bgAssetIdx)
+    let layers = this.lottieJSON.get('layers').get(bgLayerIdx)
+    let assets = this.lottieJSON.get('assets').get(bgAssetIdx)
     const imgWidth = assets.get('w')
     const imgHeight = assets.get('h')
     // 图片缩放
@@ -167,7 +167,7 @@ export default class LottieSchema {
       layers = layers.setIn(['ks', 'p', 'k'], [!x ? _x : x, !y ? _y : y, 0])
     }
     // 图片资源替换的情况,在外围调用
-    this.lottieJson = this.lottieJson.set('layers', layers)
+    this.lottieJSON = this.lottieJSON.set('layers', layers)
   }
   /* addBgColor(color) {
     const {
@@ -176,7 +176,7 @@ export default class LottieSchema {
       ip,
       op,
     } = this.getSize();
-    const layers = this.lottieJson.get('layers')
+    const layers = this.lottieJSON.get('layers')
     const colorLayer = LayerColor.set('sc', color)
       .set('nm', '背景颜色:' + color)
       .set('sw', width)
@@ -187,11 +187,11 @@ export default class LottieSchema {
       .set('ln', 'bgColor')
       .setIn(['ks', 'p', 'k'], [width / 2, height / 2, 0])
       .setIn(['ks', 'a', 'k'], [width / 2, height / 2, 0])
-    this.lottieJson = this.lottieJson.set('layers', layers.push(colorLayer));
+    this.lottieJSON = this.lottieJSON.set('layers', layers.push(colorLayer));
   }
 
   delBgLayer() {
-    this.lottieJson = this.lottieJson.set('layers', this.lottieJson.get('layers').pop())
+    this.lottieJSON = this.lottieJSON.set('layers', this.lottieJSON.get('layers').pop())
   } */
 
 }
