@@ -7,6 +7,7 @@ import assetImage from './assets/image'
 
 export default class LottieSchema {
   private lottieJSON: any
+  private createLayerSize: number
   constructor(options?: any) {
     const defaultOptions = {
       v: '5.4.4',
@@ -25,6 +26,7 @@ export default class LottieSchema {
       ...defaultOptions,
       ...options,
     })
+    this.createLayerSize = 0
   }
 
   public getJSON() {
@@ -90,9 +92,10 @@ export default class LottieSchema {
     const wScale = Number.parseFloat(((canvasWidth / width) * 100).toFixed(3))
     const hScale = Number.parseFloat(((canvasHeight / height) * 100).toFixed(3))
     const scale = wScale < hScale ? hScale : wScale
+    this.createLayerSize += 1
     const imageLayer = layerImage
       .set('refId', 'bgImage')
-      .set('ind', layers.count() + 1)
+      .set('ind', this.createLayerSize)
       .set('ln', 'bgImage')
       .set('cl', 'handlehook')
       .set('nm', '背景图片')
@@ -191,25 +194,42 @@ export default class LottieSchema {
     if (!this.isLottieJSON(jsonObj)) {
       return
     }
-    const precomp = fromJS(jsonObj)
+    // 加一个 assets id 的处理, 添加一个后缀
+    const timeSuffix = '_' + new Date().valueOf()
+    const formatJSON = JSON.stringify(jsonObj)
+      .replace(/"id":"image_/g, '"id":"image_' + timeSuffix)
+      .replace(/"refId":"image_/g, '"refId":"image_' + timeSuffix)
+    const precomp = fromJS(JSON.parse(formatJSON))
     // 检查基础属性是否一致
-    const { fr: pfr, ip: pip, op: pop, w: width, h: height } = precomp.toJS()
-    const { fr, ip, op, w: canvasWidth, h: canvasHeight } = this.lottieJSON.toJS()
+    const pfr = precomp.get('fr')
+    const pip = precomp.get('ip')
+    const pop = precomp.get('op')
+    const width = precomp.get('w')
+    const height = precomp.get('h')
+    const fr = this.lottieJSON.get('fr')
+    const ip = this.lottieJSON.get('ip')
+    const op = this.lottieJSON.get('op')
+    const canvasWidth = this.lottieJSON.get('w')
+    const canvasHeight = this.lottieJSON.get('h')
     if (!fr === pfr && op === pop && ip === pip) {
       return
     }
+    const layerId = 'microLottie' + timeSuffix
+    // 将 layer 转换 为 asset
     const asset = fromJS({
-      id: 'mainPrecomp',
+      id: layerId,
       layers: precomp.get('layers'),
     })
+    // 迁移 微动效 中的 assets
+    const assets = precomp.get('assets').push(asset)
     // 目标是 contain 包含适配, 以最小缩放为准
     const wScale = Number.parseFloat(((canvasWidth / width) * 100).toFixed(3))
     const hScale = Number.parseFloat(((canvasHeight / height) * 100).toFixed(3))
     const scale = wScale > hScale ? hScale : wScale
-    const layers = this.lottieJSON.get('layers')
+    this.createLayerSize += 1
     const layer = layerPrecomp
-      .set('refId', 'mainPrecomp')
-      .set('ind', layers.count() + 1)
+      .set('refId', layerId)
+      .set('ind', this.createLayerSize)
       .set('ln', 'precomp')
       .set('cl', 'handlehook')
       // .setIn(['ks', 'a', 'k'], [width / 2, height / 2, 0])
@@ -217,9 +237,10 @@ export default class LottieSchema {
       .setIn(['ks', 'p', 'k'], [canvasWidth / 2, canvasHeight / 2, 0])
 
     this.lottieJSON = this.lottieJSON
-      .set('assets', this.lottieJSON.get('assets').unshift(asset))
+      .set('assets', this.lottieJSON.get('assets').merge(assets))
       .set('layers', this.lottieJSON.get('layers').unshift(layer))
   }
+
   /* addBgColor(color) {
     const {
       width,
