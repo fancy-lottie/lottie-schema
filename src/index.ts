@@ -7,7 +7,7 @@ import assetImage from './assets/image';
 export default class LottieSchema {
   private lottieJSON: any;
   constructor(options?: any) {
-    const defaultConfig = {
+    const defaultOptions = {
       v: '5.4.4',
       fr: 25,
       ip: 0,
@@ -21,7 +21,7 @@ export default class LottieSchema {
       assets: List(),
       layers: List(),
       markers: List(),
-      ...defaultConfig,
+      ...defaultOptions,
       ...options,
     });
   }
