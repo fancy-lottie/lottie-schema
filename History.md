@@ -1,4 +1,12 @@
 
+0.0.6 / 2019-03-07
+==================
+
+**features**
+  * [[`c2b9781`](http://github.com/Lottie-Lint/lottie-schema/commit/c2b9781664d42be593f96acc30fa7e89a35dd3a8)] - feat: 添加 precomp 功能 (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`8fd09eb`](http://github.com/Lottie-Lint/lottie-schema/commit/8fd09eb83f2c680f823aaf3edeac931bb862b877)] - feat: config -> options (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`5888a62`](http://github.com/Lottie-Lint/lottie-schema/commit/5888a62187b9be8b0de1aeb097b34c481bb65e7f)] - feat: update readme (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.5 / 2019-03-07
 ==================
 
