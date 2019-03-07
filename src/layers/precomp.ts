@@ -2,11 +2,9 @@ import { fromJS } from 'immutable';
 export default fromJS({
   ddd: 0,
   ind: 1,
-  ty: 2,
-  nm: '背景图片',
-  refId: 'bgImage',
-  cl: 'handlehook',
-  ln: 'bgImage',
+  ty: 0,
+  nm: '形状动画合成',
+  refId: 'comp_0',
   sr: 1,
   ks: {
     o: {
@@ -21,7 +19,7 @@ export default fromJS({
     },
     p: {
       a: 0,
-      k: [512, 175, 0],
+      k: [618, 179, 0],
       ix: 2,
     },
     a: {
@@ -31,11 +29,13 @@ export default fromJS({
     },
     s: {
       a: 0,
-      k: [100, 100, 100],
+      k: [41, 41, 100],
       ix: 6,
     },
   },
   ao: 0,
+  w: 1024,
+  h: 350,
   ip: 0,
   op: 750,
   st: 0,
