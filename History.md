@@ -1,4 +1,14 @@
 
+0.0.7 / 2019-03-08
+==================
+
+**features**
+  * [[`802ac41`](http://github.com/Lottie-Lint/lottie-schema/commit/802ac41957cecfa934427a138ec79ff4d4027b27)] - feat: 解决 asset id 可能冲突的问题,为 precomp 确定layerId (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`0e40b5b`](http://github.com/Lottie-Lint/lottie-schema/commit/0e40b5b18ee410c7091cb244b0bb5e728c3faa84)] - feat: 添加schema中 image e 的描述 (chenpx976 <<chenpx976@gmail.com>>)
+
+**fixes**
+  * [[`f65b982`](http://github.com/Lottie-Lint/lottie-schema/commit/f65b9826c7a2c456b21734c02cc840bfeaa850d3)] - fix: 修复资源唯一id, 添加 资源的comp支持 (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.6 / 2019-03-07
 ==================
 
