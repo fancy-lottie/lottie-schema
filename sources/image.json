@@ -26,6 +26,11 @@
       "title": "图片路径",
       "description": "图片路径",
       "type": "string"
+    },
+    "e": {
+      "title": "图片资源设置",
+      "description": "0:默认,1:转成base64",
+      "type": "number"
     }
   }
 }
