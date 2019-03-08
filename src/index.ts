@@ -195,10 +195,15 @@ export default class LottieSchema {
       return
     }
     // 加一个 assets id 的处理, 添加一个后缀
-    const timeSuffix = '_' + new Date().valueOf()
+    const time = new Date().valueOf()
+    const timeSuffix = time + '_'
+    const timePrefix = '_' + time
+    const layerId = 'microLottie' + timePrefix
     const formatJSON = JSON.stringify(jsonObj)
       .replace(/"id":"image_/g, '"id":"image_' + timeSuffix)
       .replace(/"refId":"image_/g, '"refId":"image_' + timeSuffix)
+      .replace(/"id":"comp_/g, '"id":"comp_' + timeSuffix)
+      .replace(/"refId":"comp_/g, '"refId":"comp_' + timeSuffix)
     const precomp = fromJS(JSON.parse(formatJSON))
     // 检查基础属性是否一致
     const pfr = precomp.get('fr')
@@ -214,7 +219,6 @@ export default class LottieSchema {
     if (!fr === pfr && op === pop && ip === pip) {
       return
     }
-    const layerId = 'microLottie' + timeSuffix
     // 将 layer 转换 为 asset
     const asset = fromJS({
       id: layerId,
