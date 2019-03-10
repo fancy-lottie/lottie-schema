@@ -30,17 +30,17 @@
     "data": {
       "title": "Character Data",
       "description": "人物数据",
-      "properties": [
-        {
+      "properties": {
+        "cs": {
           "title": "Character Shapes",
           "description": "字符组成形状",
           "items": {
-            "properties": [
-              {
+            "properties": {
+              "i": {
                 "title": "Items",
                 "description": "角色物品",
-                "properties": [
-                  {
+                "properties": {
+                  "k": {
                     "title": "keys",
                     "description": "字符项键",
                     "oneOf": [
@@ -50,15 +50,15 @@
                     ],
                     "type": "object"
                   }
-                ],
+                },
                 "type": "object"
               }
-            ],
+            },
             "type": "object"
           },
           "type": "array"
         }
-      ],
+      },
       "type": "object"
     }
   }

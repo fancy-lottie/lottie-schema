@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "fPath": {
+      "title": "字体路径",
+      "description": "字体路径",
+      "type": "string"
+    },
+    "fFamily": {
+      "title": "字体家族",
+      "description": "字体家族",
+      "type": "string"
+    },
+    "fClass": {
+      "title": "css类名",
+      "description": "css类名",
+      "type": "string"
+    },
+    "fStyle": {
+      "title": "xxx体",
+      "description": "Regular and ..",
+      "type": "string"
+    },
+    "fName": {
+      "title": "字体名称",
+      "description": "fFamily + fStyle",
+      "type": "string"
+    },
+    "fWeight": {
+      "title": "字体粗细",
+      "description": "字体粗细",
+      "type": "string"
+    },
+    "origin": {
+      "title": "origin",
+      "description": "origin",
+      "type": "number"
+    },
+    "ascent": {
+      "title": "ascent",
+      "description": "字符最高点到baseline的推荐距离",
+      "type": "number"
+    }
+  }
+}

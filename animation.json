@@ -99,6 +99,26 @@
         "type": "object"
       },
       "type": "array"
+    },
+    "fonts": {
+      "title": "fonts",
+      "description": "字体资源",
+      "properties": {
+        "list": {
+          "title": "fonts list",
+          "description": "字体资源list",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "https://lottie-lint.github.io/lottie-schema/sources/fonts.json"
+              }
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
     }
   }
 }

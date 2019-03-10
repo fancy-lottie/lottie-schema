@@ -415,11 +415,11 @@
           },
           "type": "array"
         },
-        "mo": {
+        "m": {
           "title": "More Options",
           "description": "文字更多选项",
           "properties": {
-            "apg": {
+            "a": {
               "title": "Anchor Point Grouping",
               "description": "文本锚点分组",
               "oneOf": [{
@@ -427,7 +427,7 @@
               }],
               "type": "number"
             },
-            "ga": {
+            "g": {
               "title": "Grouping Alignment",
               "description": "文本分组对齐",
               "oneOf": [{
@@ -442,9 +442,9 @@
           },
           "type": "object"
         },
-        "tp": {
+        "p": {
           "title": "Text Path",
-          "description": "文字路径",
+          "description": "文字路径 类型可能是Object",
           "type": "number"
         },
         "d": {
