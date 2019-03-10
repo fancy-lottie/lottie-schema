@@ -7,7 +7,7 @@ import assetImage from './assets/image'
 
 export default class LottieSchema {
   private lottieJSON: any
-  private createLayerSize: number
+  public createLayerSize: number
   constructor(options?: any) {
     const defaultOptions = {
       v: '5.4.4',
@@ -23,6 +23,9 @@ export default class LottieSchema {
       assets: List(),
       layers: List(),
       markers: List(),
+      fonts: Map({
+        list: List(),
+      }),
       ...defaultOptions,
       ...options,
     })
@@ -64,6 +67,7 @@ export default class LottieSchema {
   public delBgImage() {
     const imageIdx = this.checkBgImageExist()
     if (imageIdx) {
+      this.createLayerSize -= 1
       this.lottieJSON = this.lottieJSON
         .set('assets', this.lottieJSON.get('assets').delete(imageIdx.assetIdx))
         .set('layers', this.lottieJSON.get('layers').delete(imageIdx.layerIdx))
@@ -226,6 +230,8 @@ export default class LottieSchema {
     })
     // 迁移 微动效 中的 assets
     const assets = precomp.get('assets').push(asset)
+    // 迁移 微动效 中的 fonts
+    const fontsList = precomp.hasIn(['fonts', 'list']) ? precomp.getIn(['fonts', 'list']) : []
     // 目标是 contain 包含适配, 以最小缩放为准
     const wScale = Number.parseFloat(((canvasWidth / width) * 100).toFixed(3))
     const hScale = Number.parseFloat(((canvasHeight / height) * 100).toFixed(3))
@@ -243,8 +249,16 @@ export default class LottieSchema {
     this.lottieJSON = this.lottieJSON
       .set('assets', this.lottieJSON.get('assets').merge(assets))
       .set('layers', this.lottieJSON.get('layers').unshift(layer))
+      .setIn(['fonts', 'list'], this.lottieJSON.getIn(['fonts', 'list']).merge(fontsList))
   }
 
+  /**
+   * delPrecomp 删除微动效
+   * 查找是否有 asset里面 refId
+   */
+  public delPrecomp(layerIdx) {
+    return layerIdx
+  }
   /* addBgColor(color) {
     const {
       width,
