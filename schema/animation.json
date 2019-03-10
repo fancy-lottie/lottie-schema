@@ -4,7 +4,7 @@
   "properties": {
     "ip": {
       "title": "In Point",
-      "description": "在时间点的统治者。集的初始帧动画。",
+      "description": "初始帧",
       "type": "number"
     },
     "op": {

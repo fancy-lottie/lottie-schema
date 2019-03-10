@@ -68,12 +68,12 @@
     },
     "ip": {
       "title": "In Point",
-      "description": "设置层的初始帧。",
+      "description": "初始帧",
       "type": "number"
     },
     "op": {
       "title": "Out Point",
-      "description": "Out Point of layer。设置图层的最终帧。",
+      "description": "结束帧",
       "type": "number"
     },
     "st": {
@@ -83,7 +83,7 @@
     },
     "nm": {
       "title": "Name",
-      "description": "After Effects图层名称。用于表达式。",
+      "description": "After Effects图层名称。用于KeyPath。",
       "type": "number"
     },
     "hasMask": {
