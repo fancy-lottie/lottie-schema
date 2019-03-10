@@ -418,7 +418,8 @@
         "mo": {
           "title": "More Options",
           "description": "文字更多选项",
-          "properties": [{
+          "properties": {
+            "apg": {
               "title": "Anchor Point Grouping",
               "description": "文本锚点分组",
               "oneOf": [{
@@ -426,7 +427,7 @@
               }],
               "type": "number"
             },
-            {
+            "ga": {
               "title": "Grouping Alignment",
               "description": "文本分组对齐",
               "oneOf": [{
@@ -438,77 +439,81 @@
               ],
               "type": "number"
             }
-          ],
+          },
           "type": "object"
         },
-        {
+        "tp": {
           "title": "Text Path",
           "description": "文字路径",
           "type": "number"
         },
-        {
+        "d": {
           "title": "Document",
           "description": "文本文档数据",
-          "properties": [{
-            "title": "Keyframes",
-            "description": "文本文档数据关键帧",
-            "items": {
-              "oneOf": [{
-                "properties": [{
-                    "title": "Time",
-                    "description": "关键帧时间",
-                    "type": "number"
-                  },
-                  {
-                    "title": "Text Properties",
-                    "description": "文字属性",
-                    "type": "object",
-                    "properties": [{
-                        "title": "Font",
-                        "description": "文字字体",
-                        "type": "string"
-                      },
-                      {
-                        "title": "Font Color",
-                        "description": "文字字体颜色",
-                        "type": "array"
-                      },
-                      {
-                        "title": "Justificaiton",
-                        "description": "文字理由",
-                        "type": "string"
-                      },
-                      {
-                        "title": "Line Height",
-                        "description": "文字线高度",
-                        "type": "number"
-                      },
-                      {
-                        "title": "Size",
-                        "description": "文字字体大小",
-                        "type": "number"
-                      },
-                      {
-                        "title": "Text",
-                        "description": "文本字符串值",
-                        "type": "string"
-                      },
-                      {
-                        "title": "Tracking",
-                        "description": "文字追踪",
-                        "type": "number"
+          "properties": {
+            "k": {
+              "title": "Keyframes",
+              "description": "文本文档数据关键帧",
+              "items": {
+                "oneOf": [{
+                  "properties": {
+                    "t": {
+                      "title": "Time",
+                      "description": "关键帧时间",
+                      "type": "number"
+                    },
+                    "s": {
+                      "title": "Text Properties",
+                      "description": "文字属性",
+                      "type": "object",
+                      "properties": {
+                        "f": {
+                          "title": "Font",
+                          "description": "文字字体",
+                          "type": "string"
+                        },
+                        "fc": {
+                          "title": "Font Color",
+                          "description": "文字字体颜色",
+                          "type": "array"
+                        },
+                        "j": {
+                          "title": "Justificaiton",
+                          "description": "文字理由",
+                          "type": "string"
+                        },
+                        "lh": {
+                          "title": "Line Height",
+                          "description": "文字线高度",
+                          "type": "number"
+                        },
+                        "s": {
+                          "title": "Size",
+                          "description": "文字字体大小",
+                          "type": "number"
+                        },
+                        "t": {
+                          "title": "Text",
+                          "description": "文本字符串值",
+                          "type": "string"
+                        },
+                        "tr": {
+                          "title": "Tracking",
+                          "description": "文字追踪",
+                          "type": "number"
+                        }
                       }
-                    ]
+                    }
                   }
-                ]
-              }],
-              "type": "object"
-            },
-            "type": "array"
-          }],
+                }],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          },
           "type": "object"
         }
-      ],
+      },
       "type": "object"
     }
   }
