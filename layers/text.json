@@ -487,6 +487,11 @@
                           "description": "文字线高度",
                           "type": "number"
                         },
+                        "ls": {
+                          "title": "letter-spacing",
+                          "description": "文字间距",
+                          "type": "number"
+                        },
                         "s": {
                           "title": "Size",
                           "description": "文字字体大小",
