@@ -119,16 +119,16 @@
       "properties": {
         "a": {
           "title": "Animators",
-          "description": "文本动画师",
+          "description": "文本动画",
           "items": {
             "properties": {
               "a": {
                 "title": "Animated Properties",
-                "description": "文本动画师动画属性",
+                "description": "文本动画动画属性",
                 "properties": {
                   "p": {
                     "title": "Position",
-                    "description": "文本动画师位置",
+                    "description": "文本动画位置",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
                       },
@@ -140,7 +140,7 @@
                   },
                   "a": {
                     "title": "Anchor Point",
-                    "description": "文本动画师锚点",
+                    "description": "文本动画锚点",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
                       },
@@ -152,7 +152,7 @@
                   },
                   "s": {
                     "title": "Scale",
-                    "description": "文本动画师比例",
+                    "description": "文本动画比例",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
                       },
@@ -164,7 +164,7 @@
                   },
                   "sk": {
                     "title": "Skew",
-                    "description": "文本动画师歪斜",
+                    "description": "文本动画歪斜",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
@@ -176,7 +176,7 @@
                   },
                   "sa": {
                     "title": "Skew Axis",
-                    "description": "文本动画师Skew Axis",
+                    "description": "文本动画Skew Axis",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
@@ -188,7 +188,7 @@
                   },
                   "r": {
                     "title": "Rotation",
-                    "description": "文本动画师旋转",
+                    "description": "文本动画旋转",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
@@ -200,7 +200,7 @@
                   },
                   "o": {
                     "title": "Opacity",
-                    "description": "文本动画师不透明度",
+                    "description": "文本动画不透明度",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
@@ -212,7 +212,7 @@
                   },
                   "sw": {
                     "title": "Stroke Width",
-                    "description": "文本动画师笔画宽度",
+                    "description": "文本动画笔画宽度",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
@@ -224,7 +224,7 @@
                   },
                   "sc": {
                     "title": "Stroke Color",
-                    "description": "文本动画师笔画颜色",
+                    "description": "文本动画笔画颜色",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
                       },
@@ -236,7 +236,7 @@
                   },
                   "fc": {
                     "title": "Fill Color",
-                    "description": "文本动画师填充颜色",
+                    "description": "文本动画填充颜色",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
                       },
@@ -248,7 +248,7 @@
                   },
                   "fh": {
                     "title": "Fill Hue",
-                    "description": "文本动画师填充色调",
+                    "description": "文本动画填充色调",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
@@ -260,7 +260,7 @@
                   },
                   "fs": {
                     "title": "Fill Saturation",
-                    "description": "文本动画师填充饱和度",
+                    "description": "文本动画填充饱和度",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
@@ -272,7 +272,7 @@
                   },
                   "fb": {
                     "title": "Fill Brightness",
-                    "description": "文本动画师填充亮度",
+                    "description": "文本动画填充亮度",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
@@ -284,7 +284,7 @@
                   },
                   "t": {
                     "title": "Tracking",
-                    "description": "文本动画师跟踪",
+                    "description": "文本动画跟踪",
                     "oneOf": [{
                         "$ref": "https://lottie-lint.github.io/lottie-schema/properties/value.json"
                       },
