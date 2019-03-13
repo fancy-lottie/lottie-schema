@@ -1,4 +1,12 @@
 
+0.0.8 / 2019-03-13
+==================
+
+**features**
+  * [[`718501d`](http://github.com/Lottie-Lint/lottie-schema/commit/718501db9db7b9813cb16c81d06fd4e82ee397ac)] - feat: 添加微动效 支持 字体 (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`74ee970`](http://github.com/Lottie-Lint/lottie-schema/commit/74ee9706f46db01f16fb16df9a79f898098bdc35)] - feat: update schema (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`64d9a19`](http://github.com/Lottie-Lint/lottie-schema/commit/64d9a1926b0791def3c8afd525411d0d81a7baca)] - feat: 更新 layer/test.json (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.7 / 2019-03-08
 ==================
 
