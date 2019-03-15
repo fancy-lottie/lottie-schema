@@ -1,4 +1,13 @@
 
+0.0.9 / 2019-03-15
+==================
+
+**features**
+  * [[`548c51e`](http://github.com/Lottie-Lint/lottie-schema/commit/548c51e128e0bb3535e6840aa3e0a7f045a08890)] - feat: 去除id设置 (chenpx976 <<chenpx976@gmail.com>>)
+
+**fixes**
+  * [[`0204798`](http://github.com/Lottie-Lint/lottie-schema/commit/02047987b3e928bf7ad4d67d7a60f3d8d844c2e5)] - fix: 修复背景图层的判定 (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.8 / 2019-03-13
 ==================
 
