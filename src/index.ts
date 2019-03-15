@@ -100,8 +100,8 @@ export default class LottieSchema {
     const imageLayer = layerImage
       .set('refId', 'bgImage')
       .set('ind', this.createLayerSize)
-      .set('ln', 'bgImage')
-      .set('cl', 'handlehook')
+      // .set('ln', 'bgImage')
+      .set('cl', 'bgImage handlehook')
       .set('nm', '背景图片')
       .set('ip', ip)
       .set('op', op)
@@ -243,8 +243,8 @@ export default class LottieSchema {
     const layer = layerPrecomp
       .set('refId', layerId)
       .set('ind', this.createLayerSize)
-      .set('ln', 'precomp')
-      .set('cl', 'handlehook')
+      // .set('ln', 'precomp')
+      .set('cl', 'precomp handlehook')
       // .setIn(['ks', 'a', 'k'], [width / 2, height / 2, 0])
       .setIn(['ks', 's', 'k'], [scale, scale, 0])
       .setIn(['ks', 'p', 'k'], [canvasWidth / 2, canvasHeight / 2, 0])
