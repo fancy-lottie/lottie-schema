@@ -126,6 +126,9 @@ export default class LottieSchema {
     const layerIdx = layers.findIndex((value: any) => {
       return value.get('refId') === 'bgImage'
     })
+    if (assetIdx === -1 || layerIdx === -1) {
+      return false
+    }
     if (!Number.isInteger(assetIdx) || !Number.isInteger(layerIdx)) {
       return false
     }
