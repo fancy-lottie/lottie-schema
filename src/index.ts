@@ -61,6 +61,23 @@ export default class LottieSchema {
       this.lottieJSON = this.lottieJSON.set('h', height)
     }
   }
+
+  /**
+   * getLayerProps
+   */
+  public getLayerProps() {
+    const layers = this.lottieJSON.get('layers')
+    return layers
+      .map(layer => ({
+        nm: layer.get('nm'),
+        w: layer.get('w'),
+        h: layer.get('h'),
+        s: layer.getIn(['ks', 's', 'k'])[0],
+        x: layer.getIn(['ks', 'p', 'k'])[0],
+        y: layer.getIn(['ks', 'p', 'k'])[1],
+      }))
+      .toJS()
+  }
   /**
    * delBgImage
    */
@@ -145,14 +162,24 @@ export default class LottieSchema {
     if (!imageIdx) {
       return
     }
-    const { layerIdx } = imageIdx
-    this.changeLayersProp({ layerIdx, scale, x, y })
+    // const { layerIdx } = imageIdx
+    this.changeLayersProp({ nm: '背景图片', scale, x, y })
   }
 
   /**
+   * getIdxByNm
+   */
+  public getIdxByNm(nm) {
+    return this.lottieJSON.get('layers').findIndex(value => value.get('nm') === nm)
+  }
+  /**
    * changeLayersProp
    */
-  public changeLayersProp({ layerIdx, scale, x, y }) {
+  public changeLayersProp({ nm, scale, x, y }) {
+    const layerIdx = this.getIdxByNm(nm)
+    if (layerIdx === -1) {
+      return
+    }
     let layers = this.lottieJSON.get('layers').get(layerIdx)
     // 图片缩放
     if (scale) {
@@ -243,7 +270,8 @@ export default class LottieSchema {
     const layer = layerPrecomp
       .set('refId', layerId)
       .set('ind', this.createLayerSize)
-      // .set('ln', 'precomp')
+      .set('nm', 'precomp' + timePrefix)
+      .set('ln', 'precomp' + timePrefix)
       .set('cl', 'precomp handlehook')
       // .setIn(['ks', 'a', 'k'], [width / 2, height / 2, 0])
       .setIn(['ks', 's', 'k'], [scale, scale, 0])
@@ -257,10 +285,25 @@ export default class LottieSchema {
 
   /**
    * delPrecomp 删除微动效
-   * 查找是否有 asset里面 refId
+   * 查找 assets 里面 refId
    */
-  public delPrecomp(layerIdx) {
-    return layerIdx
+  public delPrecomp(nm: string) {
+    const layerIdx = this.getIdxByNm(nm)
+    const layerId = 'microLottie' + '_' + nm.split('_')[1]
+    const assetIdx = this.lottieJSON.get('assets').findIndex(value => value.id === layerId)
+    if (assetIdx > -1) {
+      this.lottieJSON = this.lottieJSON.set(
+        'assets',
+        this.lottieJSON.get('assets').delete(assetIdx)
+      )
+    }
+    if (layerIdx > -1) {
+      this.lottieJSON = this.lottieJSON.set(
+        'layers',
+        this.lottieJSON.get('layers').delete(layerIdx)
+      )
+      this.createLayerSize -= 1
+    }
   }
   /* addBgColor(color) {
     const {
