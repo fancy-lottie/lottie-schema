@@ -1,4 +1,10 @@
 
+0.0.10 / 2019-03-20
+==================
+
+**features**
+  * [[`2a401b8`](http://github.com/Lottie-Lint/lottie-schema/commit/2a401b87ab50399b9bd99834d1f4083bd7d56d52)] - feat: 添加修改图层逻辑 (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.9 / 2019-03-15
 ==================
 
