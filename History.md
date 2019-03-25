@@ -1,4 +1,10 @@
 
+0.0.11 / 2019-03-25
+==================
+
+**fixes**
+  * [[`a96c7ce`](http://github.com/Lottie-Lint/lottie-schema/commit/a96c7ce545b755fbfd6f22a126aafcebd9925cd7)] - fix: 修复添加微动效的属性计算问题 (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.10 / 2019-03-20
 ==================
 
