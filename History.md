@@ -1,4 +1,10 @@
 
+0.0.12 / 2019-03-25
+==================
+
+**fixes**
+  * [[`7499b72`](http://github.com/Lottie-Lint/lottie-schema/commit/7499b7226a7ad9fe621c1efec6d6b4f47cad3a5c)] - fix: 修复添加微动效的宽度计算问题 (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.11 / 2019-03-25
 ==================
 
