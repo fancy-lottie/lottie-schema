@@ -272,12 +272,12 @@ export default class LottieSchema {
       .set('ind', this.createLayerSize)
       .set('nm', 'precomp' + timePrefix)
       .set('ln', 'precomp' + timePrefix)
-      .set('w', Number(canvasWidth))
-      .set('h', Number(canvasHeight))
+      .set('w', Number(width))
+      .set('h', Number(height))
       .set('cl', 'precomp handlehook')
-      .setIn(['ks', 'a', 'k'], [canvasWidth / 2, canvasHeight / 2, 0])
+      .setIn(['ks', 'a', 'k'], [width / 2, height / 2, 0]) // 锚点 是相对于本身的
       .setIn(['ks', 's', 'k'], [scale, scale, 0])
-      .setIn(['ks', 'p', 'k'], [canvasWidth / 2, canvasHeight / 2, 0])
+      .setIn(['ks', 'p', 'k'], [canvasWidth / 2, canvasHeight / 2, 0]) // 位置是相对于画布的
 
     this.lottieJSON = this.lottieJSON
       .set('assets', this.lottieJSON.get('assets').merge(assets))
