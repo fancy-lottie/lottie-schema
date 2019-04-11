@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "start": {
+      "title": "起始帧",
+      "description": "起始帧",
+      "type": "number"
+    },
+    "end": {
+      "title": "结束帧",
+      "description": "结束帧",
+      "type": "number"
+    },
+    "loop": {
+      "title": "循环次数",
+      "description": "-1:无限循环,1:循环1次",
+      "type": "number"
+    }
+  }
+}
