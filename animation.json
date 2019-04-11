@@ -106,7 +106,7 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/player.json"
+            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/players.json"
           }
         ],
         "type": "object"
