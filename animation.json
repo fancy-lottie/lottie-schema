@@ -100,6 +100,19 @@
       },
       "type": "array"
     },
+    "players": {
+      "title": "Players",
+      "description": "动画播放规则",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/player.json"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
     "fonts": {
       "title": "fonts",
       "description": "字体资源",
