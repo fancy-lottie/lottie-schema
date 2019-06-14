@@ -10,7 +10,7 @@ export default class LottieSchema {
   public createLayerSize: number
   constructor(options?: any) {
     const defaultOptions = {
-      v: '5.4.4',
+      v: '5.5.5',
       fr: 25,
       ip: 0,
       op: 750,
