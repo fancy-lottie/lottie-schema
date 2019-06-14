@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "k": {
-      "description": "属性值关键帧",
+      "description": "关键帧的属性值",
       "extended_name": "Keyframes",
       "items": {
         "type": "object",

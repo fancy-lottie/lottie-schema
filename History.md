@@ -1,4 +1,11 @@
 
+0.0.13 / 2019-06-14
+==================
+
+**features**
+  * [[`7b5ab1a`](http://github.com/Lottie-Lint/lottie-schema/commit/7b5ab1a5e69d608df4cb4edc148f9626fe41c337)] - feat: update v (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`f7d6e54`](http://github.com/Lottie-Lint/lottie-schema/commit/f7d6e5471a31e95200dcf22637d4ced0f122e2b3)] - feat: 添加动画播放规则schema (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.12 / 2019-03-25
 ==================
 

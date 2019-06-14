@@ -10,11 +10,11 @@
   "assets": [],
   "fonts": {
     "list": [{
-      "origin": 3,
-      "fPath": "字体路径",
-      "fClass": "css类名",
+      "origin": 0,
+      "fPath": "",
+      "fClass": "web-font-PingFangSC-Regular",
       "fFamily": "PingFang SC",
-      "fWeight": "字体粗细",
+      "fWeight": "",
       "fStyle": "Regular",
       "fName": "PingFangSC-Regular",
       "ascent": 72.7996826171875
