@@ -479,7 +479,7 @@
                         },
                         "j": {
                           "title": "Justificaiton",
-                          "description": "文字理由",
+                          "description": "文字对齐",
                           "type": "string"
                         },
                         "lh": {
