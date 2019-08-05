@@ -33,6 +33,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "immutable": "^4.0.0-rc.12"
+    "immutability-helper": "^3.0.1",
+    "lodash-es": "^4.17.15"
   }
 }

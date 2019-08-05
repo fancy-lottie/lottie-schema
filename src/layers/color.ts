@@ -1,7 +1,4 @@
-import {
-  fromJS
-} from 'immutable';
-export default fromJS({
+export default {
   "ddd": 0,
   "ind": 1,
   "ty": 1,
@@ -44,4 +41,4 @@ export default fromJS({
   "op": 750,
   "st": 0,
   "bm": 0
-})
+}
