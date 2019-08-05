@@ -1,4 +1,11 @@
 
+1.0.0 / 2019-08-05
+==================
+
+**features**
+  * [[`ec5b53f`](http://github.com/Lottie-Lint/lottie-schema/commit/ec5b53f384db2fae49866940968f9409d0a9e797)] - feat: 废除 immutable (chenpx976 <<chenpx976@gmail.com>>)
+  * [[`2b49a4f`](http://github.com/Lottie-Lint/lottie-schema/commit/2b49a4f88235a7b3d5f149b2ce2f0b6972c22480)] - feat: 补充 文字 j (chenpx976 <<chenpx976@gmail.com>>)
+
 0.0.13 / 2019-06-14
 ==================
 
