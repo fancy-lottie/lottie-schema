@@ -1,4 +1,10 @@
 
+1.0.2 / 2019-08-06
+==================
+
+**fixes**
+  * [[`3460fd1`](http://github.com/Lottie-Lint/lottie-schema/commit/3460fd1143999ce05ee6c6bad9479d04fd16a78a)] - fix: 修复 ty 属性 (chenpx976 <<chenpx976@gmail.com>>)
+
 1.0.1 / 2019-08-06
 ==================
 
