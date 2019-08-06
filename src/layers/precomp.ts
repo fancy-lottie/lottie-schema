@@ -1,7 +1,7 @@
 export default {
   ddd: 0,
   ind: 1,
-  ty: 0,
+  ty: '0',
   nm: '形状动画合成',
   refId: 'comp_0',
   sr: 1,
