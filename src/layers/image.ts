@@ -1,7 +1,7 @@
 export default {
   ddd: 0,
   ind: 1,
-  ty: '2',
+  ty: 2,
   nm: '背景图片',
   refId: 'bgImage',
   cl: 'handlehook',

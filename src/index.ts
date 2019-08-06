@@ -17,7 +17,7 @@ interface ILottieJSONAsset {
 }
 
 interface ILottieJSONLayer {
-  ty: string;
+  ty: number;
   nm: string;
   ks: any;
   ao: number;
@@ -143,19 +143,19 @@ export default class LottieSchema {
     const pop = precomp.op
     const width = precomp.w
     const height = precomp.h
-    // const fr = this.lottieJSON.fr
-    // const ip = this.lottieJSON.ip
-    // const op = this.lottieJSON.op
+    const fr = this.lottieJSON.fr
+    const ip = this.lottieJSON.ip
+    const op = this.lottieJSON.op
     const canvasWidth = this.lottieJSON.w
     const canvasHeight = this.lottieJSON.h
     // 动效的 动画属性 覆盖 原本空白模板的动画属性
-    this.lottieJSON.fr = pfr
-    this.lottieJSON.ip = pip
-    this.lottieJSON.op = pop
-    /* if (fr !== pfr || op !== pop || ip !== pip) {
+    if (fr !== pfr || op !== pop || ip !== pip) {
       console.warn('fr, pfr, op, pop, ip, pip', fr, pfr, op, pop, ip, pip)
-      return
-    } */
+      this.lottieJSON.fr = pfr
+      this.lottieJSON.ip = pip
+      this.lottieJSON.op = pop
+      // return
+    }
     // 将 layer 转换 为 asset
     const asset = {
       id: layerId,
@@ -178,6 +178,8 @@ export default class LottieSchema {
       nm: { $set: 'precomp' + timePrefix },
       w: { $set: Number(width) },
       h: { $set: Number(height) },
+      op: { $set: pop },
+      ip: { $set: pip },
       ks: {
         a: {
           k: { $set: [width / 2, height / 2, 0] } // 锚点 是相对于本身的
