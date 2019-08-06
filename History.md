@@ -1,4 +1,10 @@
 
+1.0.1 / 2019-08-06
+==================
+
+**features**
+  * [[`9e3743d`](http://github.com/Lottie-Lint/lottie-schema/commit/9e3743d3bcaf2ceeb3f3ca4eb86e4e06cdb75e6b)] - feat: 重构 (chenpx976 <<chenpx976@gmail.com>>)
+
 1.0.0 / 2019-08-05
 ==================
 
