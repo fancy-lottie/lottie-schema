@@ -1,4 +1,10 @@
 
+1.0.3 / 2019-08-07
+==================
+
+**features**
+  * [[`48397e8`](http://github.com/Lottie-Lint/lottie-schema/commit/48397e8ca9dd47ecba62202b52a5aecf84e2692c)] - feat: 去处 fonts 支持 (chenpx976 <<chenpx976@gmail.com>>)
+
 1.0.2 / 2019-08-06
 ==================
 

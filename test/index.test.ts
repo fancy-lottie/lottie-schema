@@ -1,5 +1,5 @@
 import LottieSchema from '../src/index'
-// import * as fs from 'fs'
+import * as fs from 'fs'
 const data1 = require('./点赞动画3.json')
 // tslint:disable-next-line:no-console
 const log = obj => console.log(JSON.stringify(obj))
@@ -43,16 +43,16 @@ it('changeBgImage', () => {
   log(lottieSchema.getObj())
 })
 
-it('addPrecomp', () => {
+it.only('addPrecomp', () => {
   const { ip, op, fr } = data1;
   const lottieSchema = new LottieSchema({
     ip, op, fr
   })
-  // lottieSchema.addBgImage({
-  //   url: 'https://gw.alipayobjects.com/zos/antfincdn/I9Bu85KAaq/750x300.png',
-  //   width: 750,
-  //   height: 300,
-  // })
+  lottieSchema.addBgImage({
+    url: 'https://gw.alipayobjects.com/zos/antfincdn/I9Bu85KAaq/750x300.png',
+    width: 750,
+    height: 300,
+  })
   lottieSchema.addPrecomp(data1)
-  // fs.writeFileSync('./test/res1.json', lottieSchema.getJSON())
+  fs.writeFileSync('./test/res1.json', lottieSchema.getJSON())
 })
