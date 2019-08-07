@@ -1,7 +1,7 @@
 // import { Map, List, fromJS } from 'immutable'
 import update from 'immutability-helper'
 // import { get, set } from 'lodash-es'
-const { get, set } = require('lodash');
+// const { get, set } = require('lodash');
 // import * as get from 'lodash.get'
 // import LayerColor from './layers/color';
 import layerImage from './layers/image'
@@ -164,8 +164,8 @@ export default class LottieSchema {
     // 迁移 微动效 中的 assets
     const assets = precomp.assets
     assets.push(asset)
-    // 迁移 微动效 中的 fonts
-    const fontsList = get(precomp, 'fonts.list', null)
+    // // 迁移 微动效 中的 fonts
+    // const fontsList = get(precomp, 'fonts.list', null)
     // const fontsList = precomp.hasIn(['fonts', 'list']) ? precomp.getIn(['fonts', 'list']) : []
     // 目标是 contain 包含适配, 以最小缩放为准
     const wScale = Number.parseFloat(((canvasWidth / width) * 100).toFixed(3))
@@ -194,9 +194,9 @@ export default class LottieSchema {
     })
     this.lottieJSON.assets = this.lottieJSON.assets.concat(assets)
     this.lottieJSON.layers.unshift(layer)
-    if (fontsList) {
-      set(this.lottieJSON, 'fonts.list', get(this.lottieJSON, 'fonts.list', []).concat(fontsList))
-    }
+    // if (fontsList) {
+    //   set(this.lottieJSON, 'fonts.list', get(this.lottieJSON, 'fonts.list', []).concat(fontsList))
+    // }
   }
 
   /**
