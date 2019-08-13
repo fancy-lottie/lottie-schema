@@ -53,28 +53,40 @@ interface ILottieJSON {
   markers: ILottieJSONLayer[];
 }
 
+interface ISchemaOption {
+  fonts?: boolean;
+}
+
 export default class LottieSchema {
   private lottieJSON: ILottieJSON
+  private options: ISchemaOption
   public createLayerSize: number
-  constructor(options?: any) {
-    const defaultOptions: ILottieJSON = {
+  constructor(lottieObj?: any, options: ISchemaOption = {}) {
+    const defaultLottieObj: ILottieJSON = {
       v: '5.5.5',
       fr: 25,
       ip: 0,
       op: 750,
       w: 1024,
       h: 350,
-      nm: '初始化空层',
+      nm: '犸良合成lottie',
       ddd: 0,
       assets: [],
       layers: [],
       markers: [],
     }
+    const defaultOptions: ISchemaOption = {
+      fonts: true, // 默认输出 fonts 可 关闭
+    }
     this.lottieJSON = {
-      ...defaultOptions,
-      ...options,
+      ...defaultLottieObj,
+      ...lottieObj,
     }
     this.createLayerSize = 0
+    this.options = {
+      ...defaultOptions,
+      ...options,
+    };
   }
 
   public getJSON() {
@@ -194,7 +206,7 @@ export default class LottieSchema {
     })
     this.lottieJSON.assets = this.lottieJSON.assets.concat(assets)
     this.lottieJSON.layers.unshift(layer)
-    if (fontsList) {
+    if (fontsList && this.options.fonts) {
       set(this.lottieJSON, 'fonts.list', get(this.lottieJSON, 'fonts.list', []).concat(fontsList))
     }
   }
