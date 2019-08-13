@@ -1,4 +1,13 @@
 
+1.0.4 / 2019-08-13
+==================
+
+**features**
+  * [[`f4b0bf5`](http://github.com/Lottie-Lint/lottie-schema/commit/f4b0bf5d397b0ab225a43f03f2bbf9d1c2b70794)] - feat: 添加默认options配置 (chenpx976 <<chenpx976@gmail.com>>)
+
+**others**
+  * [[`99b5d47`](http://github.com/Lottie-Lint/lottie-schema/commit/99b5d47c06f3f32462007f63d6d33354e028c398)] - Revert "feat: 去处 fonts 支持" (chenpx976 <<chenpx976@gmail.com>>)
+
 1.0.3 / 2019-08-07
 ==================
 
