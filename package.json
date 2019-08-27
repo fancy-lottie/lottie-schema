@@ -19,7 +19,9 @@
     "build:w": "umi lib build -w",
     "deploy": "gh-pages -d schema",
     "test": "umi-test",
-    "test:w": "umi-test --watch"
+    "test:w": "umi-test --watch",
+    "test-cov": "nyc --reporter=clover npm run test -- --coverage",
+    "test-travis": "npm run test-cov"
   },
   "devDependencies": {
     "@types/jest": "^24.0.9",
@@ -27,6 +29,7 @@
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.1",
+    "nyc": "^14.1.1",
     "umi": "^2.0.0",
     "umi-plugin-library": "^1.0.1-0",
     "umi-test": "^1.4.4"
