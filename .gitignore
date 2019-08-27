@@ -5,3 +5,5 @@
 /node_modules
 .rpt2_cache
 project/Adobe After Effects 自动保存
+/.nyc_output
+/coverage
