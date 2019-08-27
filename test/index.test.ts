@@ -1,6 +1,6 @@
 import LottieSchema from '../src/index'
 import * as fs from 'fs'
-const data1 = require('./点赞动画3.json')
+
 // tslint:disable-next-line:no-console
 const log = obj => console.log(JSON.stringify(obj))
 
@@ -43,7 +43,8 @@ it('changeBgImage', () => {
   log(lottieSchema.getObj())
 })
 
-it.only('addPrecomp', () => {
+it.skip('addPrecomp', () => {
+  const data1 = require('./点赞动画3.json');
   const { ip, op, fr } = data1;
   const lottieSchema = new LottieSchema({
     ip, op, fr
