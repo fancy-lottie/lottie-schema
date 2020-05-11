@@ -15,7 +15,7 @@
       "$ref": "https://lottie-lint.github.io/lottie-schema/effects/point.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/checkbox.json"
+      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/checkBox.json"
     },
     {
       "$ref": "https://lottie-lint.github.io/lottie-schema/effects/group.json"
