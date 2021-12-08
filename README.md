@@ -1,6 +1,6 @@
 # lottie schema
 
-基于 vscode 的 json schema https://lottie-lint.github.io/lottie-schema/animation.json
+基于 vscode 的 json schema https://fancy-lottie.github.io/lottie-schema/animation.json
 
 对 lottie json 进行解析
 

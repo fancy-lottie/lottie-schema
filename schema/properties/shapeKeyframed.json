@@ -7,7 +7,7 @@
       "extended_name": "Keyframes",
       "items": {
         "type": "object",
-        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shapePropKeyframe.json"
+        "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/shapePropKeyframe.json"
       },
       "type": "array"
     },

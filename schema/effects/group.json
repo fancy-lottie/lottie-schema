@@ -29,7 +29,7 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/effects/index.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/index.json"
           }
         ],
         "type": "object"

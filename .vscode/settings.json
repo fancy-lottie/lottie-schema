@@ -5,7 +5,7 @@
         "/data/*.json",
         "/data/**/*.json"
       ],
-      "url": "https://lottie-lint.github.io/lottie-schema/animation.json"
+      "url": "https://fancy-lottie.github.io/lottie-schema/animation.json"
     }
   ]
 }

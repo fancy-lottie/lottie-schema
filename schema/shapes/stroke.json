@@ -23,7 +23,7 @@
       "description": "Stroke Line Cap",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/lineCap.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/helpers/lineCap.json"
         }
       ],
       "type": "number"
@@ -33,7 +33,7 @@
       "description": "Stroke Line Join",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/helpers/lineJoin.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/helpers/lineJoin.json"
         }
       ],
       "type": "number"
@@ -48,10 +48,10 @@
       "description": "Stroke Opacity",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/Value.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/Value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "type": "object"
@@ -61,10 +61,10 @@
       "description": "Stroke Width",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/Value.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/Value.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframed.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/valueKeyframed.json"
         }
       ],
       "type": "object"
@@ -74,10 +74,10 @@
       "description": "Stroke Color",
       "oneOf": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensional.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/multiDimensional.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/multiDimensionalKeyframed.json"
         }
       ],
       "type": "object"

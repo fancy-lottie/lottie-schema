@@ -6,7 +6,7 @@
       "description": "属性的值",
       "extended_name": "Value",
       "type": "object",
-      "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shapeProp.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/shapeProp.json"
     },
     "x": {
       "description": "财产表达。修改值的AE表达式。",
