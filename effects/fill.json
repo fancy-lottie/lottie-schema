@@ -28,25 +28,25 @@
       "description": "Effect List of properties.",
       "items": [
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/point.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/point.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/dropDown.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/dropDown.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/color.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/dropDown.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/dropDown.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/slider.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/slider.json"
         },
         {
-          "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
+          "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/slider.json"
         }
       ],
       "type": "array"

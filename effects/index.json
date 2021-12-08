@@ -3,49 +3,49 @@
   "type": "object",
   "oneOf": [
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/slider.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/slider.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/angle.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/angle.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/color.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/color.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/point.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/point.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/checkbox.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/checkBox.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/group.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/group.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/noValue.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/noValue.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/dropDown.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/dropDown.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/customValue.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/customValue.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/layerIndex.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/layerIndex.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/tint.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/tint.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/fill.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/fill.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/stroke.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/stroke.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/tritone.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/tritone.json"
     },
     {
-      "$ref": "https://lottie-lint.github.io/lottie-schema/effects/proLevels.json"
+      "$ref": "https://fancy-lottie.github.io/lottie-schema/effects/proLevels.json"
     }
   ]
 }

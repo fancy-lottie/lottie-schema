@@ -13,22 +13,22 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/shape.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/shape.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/solid.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/solid.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/comp.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/comp.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/image.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/image.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/null.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/null.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/text.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/text.json"
           }
         ],
         "type": "object"

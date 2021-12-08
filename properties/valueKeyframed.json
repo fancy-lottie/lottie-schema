@@ -3,12 +3,12 @@
   "type": "object",
   "properties": {
     "k": {
-      "description": "属性值关键帧",
+      "description": "关键帧的属性值",
       "extended_name": "Keyframes",
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/valueKeyframe.json"
+        "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/valueKeyframe.json"
       }
     },
     "x": {

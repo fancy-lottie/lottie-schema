@@ -29,55 +29,55 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/shape.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/shape.json",
             "value": "sh"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/rect.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/rect.json",
             "value": "rc"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/ellipse.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/ellipse.json",
             "value": "el"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/star.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/star.json",
             "value": "sr"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/fill.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/fill.json",
             "value": "fl"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/gFill.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/gFill.json",
             "value": "gf"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/gStroke.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/gStroke.json",
             "value": "gs"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/stroke.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/stroke.json",
             "value": "st"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/merge.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/merge.json",
             "value": "mm"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/trim.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/trim.json",
             "value": "tm"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/group.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/group.json",
             "value": "gr"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/roundedCorners.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/roundedCorners.json",
             "value": "rd"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/shapes/transform.json",
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/shapes/transform.json",
             "value": "tr"
           }
         ],

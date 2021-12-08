@@ -49,22 +49,22 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/shape.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/shape.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/solid.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/solid.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/precomp.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/precomp.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/image.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/image.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/null.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/null.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/layers/text.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/layers/text.json"
           }
         ],
         "type": "object"
@@ -77,10 +77,10 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/image.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/sources/image.json"
           },
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/precomp.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/sources/precomp.json"
           }
         ],
         "type": "object"
@@ -93,7 +93,7 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/chars.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/sources/chars.json"
           }
         ],
         "type": "object"
@@ -106,7 +106,7 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://lottie-lint.github.io/lottie-schema/sources/players.json"
+            "$ref": "https://fancy-lottie.github.io/lottie-schema/sources/players.json"
           }
         ],
         "type": "object"
@@ -123,7 +123,7 @@
           "items": {
             "oneOf": [
               {
-                "$ref": "https://lottie-lint.github.io/lottie-schema/sources/fonts.json"
+                "$ref": "https://fancy-lottie.github.io/lottie-schema/sources/fonts.json"
               }
             ],
             "type": "object"

@@ -45,7 +45,7 @@
                     "description": "字符项键",
                     "oneOf": [
                       {
-                        "$ref": "https://lottie-lint.github.io/lottie-schema/properties/shape.json"
+                        "$ref": "https://fancy-lottie.github.io/lottie-schema/properties/shape.json"
                       }
                     ],
                     "type": "object"
